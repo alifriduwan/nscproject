@@ -8,11 +8,13 @@ import AnnouncementR1 from './pages/AnnouncementR1';
 import AnnouncementR2 from './pages/AnnouncementR2';
 import Topic from './pages/Topic';
 import PlaceContac from './pages/PlaceContac';
+import Schedule from './components/Schedule';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "placecontac",
     element: <PlaceContac />,
+  },
+  {
+    path: "schedule",
+    element: <Schedule />,
   },
 ]);
 

@@ -9,7 +9,7 @@ function AnnouncementR1() {
   return (
     <>
     <Header />
-    <div className="container-anm" style={{marginTop:'50px'}}>
+    <div className="container-anm" style={{marginTop:'50px'}} id="announceR1">
       <div className="container-lg">
       <h3>ผลการแข่งขันรอบที่ 1</h3>
       <Row xs={1} md={2} className="g-4">
