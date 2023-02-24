@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './Header'
 import Table from 'react-bootstrap/Table';
+import Header from '../components/Header';
 
-function Schedule() {
+function ScheduleG2() {     
      const data = [
-          { id: 1, group: '14', timePresent: '09.00-09.20', IdProject: '24p14s0001', nameProject:'ลองดู-ระบบทดลองสินค้าและบริการสำหรับผู้ประกอบการเพื่อการวิจัยตลาดภายใต้สถานการ์ณ Covid-19' },
-          { id: 1, group: '14', timePresent: '09.20-09.40', IdProject: '24p14s0006', nameProject:'พีคอด' },
-          
-          { id: 1, group: '14', timePresent: '09.40-10.00', IdProject: '24p14s0103', nameProject:'GermyJunk:บริการค้นหาและวิเคราะห์จุดรับขยะปนเปื้อนโรคติดเชื้อไวรัสโคโรนา 2019(COVID-19)' },
+          { id: '1', group: '14', timePresent: '09.00-09.20', IdProject: '24p14s0001', nameProject:'ลองดู-ระบบทดลองสินค้าและบริการสำหรับผู้ประกอบการเพื่อการวิจัยตลาดภายใต้สถานการ์ณ Covid-19' },
+          { id: '1', group: '14', timePresent: '09.20-09.40', IdProject: '24p14s0066', nameProject:'พีคอด' },
+          { id: '1', group: '14', timePresent: '09.40-10.00', IdProject: '24p14s0103', nameProject:'GermyJunk:บริการค้นหาและวิเคราะห์จุดรับขยะปนเปื้อนโรคติดเชื้อไวรัสโคโรนา 2019(COVID-19)' },
         ];
 
         const thStyle = { textAlign: 'center' };
@@ -40,4 +39,4 @@ function Schedule() {
   )
 }
 
-export default Schedule
+export default ScheduleG2

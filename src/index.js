@@ -8,12 +8,18 @@ import AnnouncementR1 from './pages/AnnouncementR1';
 import AnnouncementR2 from './pages/AnnouncementR2';
 import Topic from './pages/Topic';
 import PlaceContac from './pages/PlaceContac';
-import Schedule from './components/Schedule';
+import ScheduleG1 from './pages/ScheduleG1';
+import ScheduleG2 from './pages/ScheduleG2';
+import ScheduleG3 from './pages/ScheduleG3';
+import ScheduleG4 from './pages/ScheduleG4';
+import ScheduleG5 from './pages/ScheduleG5';
+import ScheduleG6 from './pages/ScheduleG6';
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 const router = createBrowserRouter([
@@ -38,8 +44,28 @@ const router = createBrowserRouter([
     element: <PlaceContac />,
   },
   {
-    path: "schedule",
-    element: <Schedule />,
+    path: "scheduleG1",
+    element: <ScheduleG1 />,
+  },
+  {
+    path: "scheduleG2",
+    element: <ScheduleG2 />,
+  },
+  {
+    path: "scheduleG3",
+    element: <ScheduleG3 />,
+  },
+  {
+    path: "scheduleG4",
+    element: <ScheduleG4 />,
+  },
+  {
+    path: "scheduleG5",
+    element: <ScheduleG5 />,
+  },
+  {
+    path: "scheduleG6",
+    element: <ScheduleG6 />,
   },
 ]);
 

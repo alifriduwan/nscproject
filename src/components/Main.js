@@ -12,8 +12,8 @@ function Main() {
           <div class="container-md">
                <div class="container-content" style={{marginTop:'25px'}}>
                     <div style={{marginLeft:'30px'}}>
-                         <h1 className='display-4' style={{marginBottom:'0'}}>การแข่งขันพัฒนา</h1>
-                         <h1 style={{display:'inline-block',marginBottom:'0'}}>โปรแกรมคอมพิวเตอร์แห่งประเทศไทย</h1>
+                         <h1 className='display-6' style={{marginBottom:'0'}} >การแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทย</h1>
+                         {/* <h1 style={{display:'inline-block',marginBottom:'0'}}>โปรแกรมคอมพิวเตอร์แห่งประเทศไทย</h1> */}
                          <p style={{paddingTop:'4.5px',fontSize:'19.5px'}}>The 24th National Software Contest:NSC 2022</p>
                     </div>
                </div>
