@@ -3,17 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image'
 
 function HeaderWLogin() {
   return (
-     <Navbar expand="lg" bg="light" style={{paddingBottom:'22.5px'}}>
+     <Navbar expand="lg" bg="light" style={{paddingBottom:'22.5px',alignItems:'center'}}>
       <Container>
         <Navbar.Brand href="/">s
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto" style={{columnGap:'20px'}}>
+          <Nav className="ms-auto" style={{columnGap:'20px',alignItems:'center'}}>
             <Nav.Link className='nav_link' href="/">หน้าหลัก</Nav.Link>
             <NavDropdown title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="/topic">หัวข้อการแข่งขัน</NavDropdown.Item>
@@ -29,6 +31,22 @@ function HeaderWLogin() {
               <hr />
               <NavDropdown.Item href="/announceR2">รอบที่ 2</NavDropdown.Item>
             </NavDropdown>
+            <div style={{width:'65px'}}>
+                {/* <a src='#'><img src='../images/user.png'style={{width:'100%'}} /></a> */}
+                  <Dropdown>
+                    <Dropdown.Toggle variant='none' id="dropdown-basic">
+                      <img src='../images/user.png' style={{width:'100%'}}/>
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">ข้อมูลส่วนตัว</Dropdown.Item>
+                      <hr />
+                      <Dropdown.Item href="#/action-2">สถานะโครงการ</Dropdown.Item>
+                      <hr />
+                      <Dropdown.Item href="#/action-3">ออกจากระบบ</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+            </div> 
           </Nav>
         </Navbar.Collapse>
       </Container>

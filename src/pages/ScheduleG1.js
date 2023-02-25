@@ -16,7 +16,7 @@ function ScheduleG1() {
      <>
           <Header />
       <div style={{maxWidth:'960px',margin:"15px auto"}}>
-          <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white',display:'flex',justifyContent:'center',alignContent:'center'}}>
+          <div className='text-center' style={{backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white'}}>
             <h6>ตารางการแข่งขัน</h6>
           </div>    
           <div style={{textAlign:'center',backgroundColor:'#1699E1', overflow:'hidden',borderRadius:'9px',color:'white'}}>
