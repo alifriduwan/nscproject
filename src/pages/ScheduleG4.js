@@ -1,6 +1,8 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
 import Header from '../components/Header';
+import ButtonForSchedule from '../components/ButtonForSchedule';
+import Footer from '../components/Footer';
 
 function ScheduleG4() {     
      const data = [
@@ -61,6 +63,10 @@ function ScheduleG4() {
       <h6>โปรดรักษาวลามาให้ตรงตามเวลาที่กำหนด * </h6>
     </div>
     </div>
+    <br />
+    <ButtonForSchedule />
+    <div style={{height:'105px'}}></div>
+    <Footer />
      </>
   )
 }

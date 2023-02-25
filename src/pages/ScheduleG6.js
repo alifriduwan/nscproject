@@ -2,6 +2,8 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 import Header from '../components/Header';
 import './Schedule.css'
+import ButtonForSchedule from '../components/ButtonForSchedule';
+import Footer from '../components/Footer';
 
 function ScheduleG6() {     
      const data = [
@@ -15,7 +17,7 @@ function ScheduleG6() {
      <>
           <Header />
 
-          <div style={{maxWidth:'1220px',margin:"45px auto"}}>
+          <div style={{maxWidth:'960px',margin:"15px auto"}}>
           <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white'}}>
             <h6>ตารางการแข่งขัน</h6>
           </div>    
@@ -63,6 +65,10 @@ function ScheduleG6() {
       <h6>โปรดรักษาวลามาให้ตรงตามเวลาที่กำหนด * </h6>
     </div>
     </div>
+    <br />
+    <ButtonForSchedule />
+    <div style={{height:'100px'}}></div>
+    <Footer />
     {/* </div> */}
      </>
   )

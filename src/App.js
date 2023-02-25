@@ -11,6 +11,15 @@ function App() {
       <Header />
       <hr style={{margin:'0 auto',border:'.5px solid #333',width:'90%'}}/>
       <Main />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </>
   );
