@@ -15,6 +15,8 @@ import ScheduleG4 from './pages/ScheduleG4';
 import ScheduleG5 from './pages/ScheduleG5';
 import ScheduleG6 from './pages/ScheduleG6';
 import ButtonForSchedule from './components/ButtonForSchedule';
+import HeaderWLogin from './components/HeaderWLogin';
+import Scheddule_MTG1 from './pages/Schedule_MTG1';
 
 
 import {
@@ -72,6 +74,14 @@ const router = createBrowserRouter([
   {
     path: "buttonSchedule",
     element: <ButtonForSchedule />,
+  },
+  {
+    path: "headerWlogin",
+    element: <HeaderWLogin />,
+  },
+  {
+    path: "schedule_mtg1",
+    element: <Scheddule_MTG1 />,
   }
 ]);
 
