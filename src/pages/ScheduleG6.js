@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
 import Header from '../components/Header';
+import './Schedule.css'
 
 function ScheduleG6() {     
      const data = [
@@ -13,7 +14,27 @@ function ScheduleG6() {
   return (
      <>
           <Header />
-          <Table striped bordered hover variant="dark">
+
+          <div style={{maxWidth:'1220px',margin:"45px auto"}}>
+          <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>ตารางการแข่งขัน</h6>
+          </div>    
+          <div style={{textAlign:'center',backgroundColor:'#1699E1', overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>
+              รอบ 2 พิจารณาผลงาน (รูปแบบออนไลน์)
+            </h6>
+          </div>
+          <div style={{textAlign:'center',backgroundColor:'#C1AEFC', overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>
+              วันจันทร์ที่ 9 กุมภาพันธ์ 2565
+            </h6>
+          </div>
+          <div style={{textAlign:'center',backgroundColor:'#C1AEFC',overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>
+              การนำเสนอผลงาน แต่ละโครงการใช้เวลา 20 นาที (นำเสนอ 15 นาที + ตอบคำถามกรรมการ 5 นาที)
+            </h6>
+          </div> 
+          <Table striped bordered hover variant="dark" className='table-rd'>
       <thead>
         <tr>
           <th style={thStyle}>กลุ่ม</th>
@@ -35,6 +56,14 @@ function ScheduleG6() {
         ))}
       </tbody>
     </Table>
+    <div style={{color:'black',paddingLeft:'10px'}}>
+      <h6>ลิงก์การแข่งขัน : https://meet.google.com/wma-xked-kor</h6>
+    </div>
+    <div style={{color:'red',paddingLeft:'10px'}}>
+      <h6>โปรดรักษาวลามาให้ตรงตามเวลาที่กำหนด * </h6>
+    </div>
+    </div>
+    {/* </div> */}
      </>
   )
 }

@@ -14,6 +14,8 @@ import ScheduleG3 from './pages/ScheduleG3';
 import ScheduleG4 from './pages/ScheduleG4';
 import ScheduleG5 from './pages/ScheduleG5';
 import ScheduleG6 from './pages/ScheduleG6';
+import ButtonForSchedule from './components/ButtonForSchedule';
+
 
 import {
   createBrowserRouter,
@@ -67,6 +69,10 @@ const router = createBrowserRouter([
     path: "scheduleG6",
     element: <ScheduleG6 />,
   },
+  {
+    path: "buttonSchedule",
+    element: <ButtonForSchedule />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

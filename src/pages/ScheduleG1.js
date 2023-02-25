@@ -13,8 +13,27 @@ function ScheduleG1() {
   return (
      <>
           <Header />
-          <Table striped bordered hover variant="dark">
-      <thead>
+      <div style={{maxWidth:'960px',margin:"15px auto"}}>
+          <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white',display:'flex',justifyContent:'center',alignContent:'center'}}>
+            <h6>ตารางการแข่งขัน</h6>
+          </div>    
+          <div style={{textAlign:'center',backgroundColor:'#1699E1', overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>
+              รอบ 2 พิจารณาผลงาน (รูปแบบออนไลน์)
+            </h6>
+          </div>
+          <div style={{textAlign:'center',backgroundColor:'#C1AEFC', overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>
+              วันจันทร์ที่ 9 กุมภาพันธ์ 2565
+            </h6>
+          </div>
+          <div style={{textAlign:'center',backgroundColor:'#C1AEFC',overflow:'hidden',borderRadius:'9px',color:'white'}}>
+            <h6>
+              การนำเสนอผลงาน แต่ละโครงการใช้เวลา 20 นาที (นำเสนอ 15 นาที + ตอบคำถามกรรมการ 5 นาที)
+            </h6>
+          </div>
+          <Table striped bordered hover variant="dark" responsive="md" style={{width:'100%',borderRadius:'9px'}}> 
+      <thead style={{borderRadius:'9px'}}>
         <tr>
           <th style={thStyle}>กลุ่ม</th>
           <th style={thStyle}>หมวด</th>
@@ -25,16 +44,23 @@ function ScheduleG1() {
       </thead>
       <tbody>
         {data.map((item) => (
-          <tr key={item.id}>
-            <td style={thStyle}>2</td>
+          <tr key={item.id} style={{overflow:'hidden'}}>
+            <td style={thStyle}>1</td>
             <td style={thStyle}>{item.group}</td>
             <td style={thStyle}>{item.timePresent}</td>
             <td style={thStyle}>{item.IdProject}</td>
-            <td>{item.nameProject}</td>
+            <td style={thStyle}>{item.nameProject}</td>
           </tr>
         ))}
       </tbody>
     </Table>
+    <div style={{color:'black',paddingLeft:'10px'}}>
+      <h6>ลิงก์การแข่งขัน : https://meet.google.com/wma-xked-kor</h6>
+    </div>
+    <div style={{color:'red',paddingLeft:'10px'}}>
+      <h6>โปรดรักษาวลามาให้ตรงตามเวลาที่กำหนด * </h6>
+    </div>
+    </div>
      </>
   )
 }
