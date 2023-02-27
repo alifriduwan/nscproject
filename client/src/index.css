@@ -299,3 +299,12 @@ Nav{
   }
 }
 /* End Login */
+
+/* Logout */
+
+.bgLogout{
+  background: #666666;
+  height: 555rem;
+}
+
+/* End Logout */
