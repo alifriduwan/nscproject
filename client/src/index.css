@@ -308,3 +308,32 @@ Nav{
 }
 
 /* End Logout */
+
+/*หัวข้อกำหนดการ*/
+.Activityhead{
+  background: #E3FCBF;
+  color: #252525;
+}
+
+.Activityhead th{
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.Activity {
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  }
+
+.column1 {
+  background: #D1FFF3;
+  color: #252525;
+}
+
+.column2 {
+  background: #DEFCF9;
+  color: #252525;
+}
+/*จบหัวข้อกำหนดการ*/
