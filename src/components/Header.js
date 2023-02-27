@@ -16,14 +16,17 @@ function Header() {
   }
 
   return (
-    <Navbar expand="lg" bg="light" style={{paddingBottom:'22.5px'}}>
+    <Navbar expand="lg" bg="navbar navbar-dark bg-dark" style={{paddingBottom:'22.5px'}}>
       <Container>
-        <Navbar.Brand href="/">s
+        <Navbar.Brand href="/">
+        <div style={{width:'50px',height:'40px'}}> 
+          <img src='../images/LOGO-NSC.png' style={{width:'100%',borderRadius:'100%'}}/>
+        </div>   
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" style={{columnGap:'20px'}}>
-            <Nav.Link className='nav_link' href="/">หน้าหลัก</Nav.Link>
+            <Nav.Link className='nav_link' href="/" style={{color:'white'}}>หน้าหลัก</Nav.Link>
             <NavDropdown title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="/topic">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />

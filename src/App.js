@@ -7,9 +7,9 @@ import Main from './components/Main';
 function App() {
   return (
     <>
-      <hr style={{marginTop:'5px',marginBottom:'0',marginLeft:'auto',marginRight:'auto',border:'.5px solid #333',width:'90%'}}/>
+      {/* <hr style={{marginTop:'5px',marginBottom:'0',marginLeft:'auto',marginRight:'auto',border:'.5px solid #333',width:'90%'}}/> */}
       <Header />
-      <hr style={{margin:'0 auto',border:'.5px solid #333',width:'90%'}}/>
+      {/* <hr style={{margin:'0 auto',border:'.5px solid #333',width:'90%'}}/> */}
       <Main />
       <br />
       <br />

@@ -2,3 +2,21 @@
      height: 630px;
      /* border: 1px solid red; */
 }
+
+
+@media only screen and (max-width: 420px) {
+
+     .container-content h1 {
+          font-size: 10px;
+          font-family: 'Courier New', Courier, monospace;
+     }
+
+     .nav_link {
+          font-size: 12px;
+     }
+
+     hr {
+          width: 100%;
+     }
+
+}
