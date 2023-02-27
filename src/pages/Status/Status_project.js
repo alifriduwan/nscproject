@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderWLogin from '../components/HeaderWLogin'
+import HeaderWLogin from '../../components/Header/HeaderWLogin'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 

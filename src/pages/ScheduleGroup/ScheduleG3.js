@@ -1,22 +1,22 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import Header from '../components/Header';
-import ButtonForSchedule from '../components/ButtonForSchedule';
-import Footer from '../components/Footer';
+import Header from '../../components/Header/Header';
+import ButtonForSchedule from '../../components/ButtonForSchedule';
+import Footer from '../../components/Footer/Footer';
 
-function ScheduleG5() {     
+function ScheduleG3() {     
      const data = [
-          { id: '1', group: '13', timePresent: '09.00-09.20', IdProject: '24p14s00034', nameProject:'PillTrack:ระบบติดตามการรับประทานยาเม็ดสำหรับผู้สูงอายุ' },
-          { id: '2', group: '13', timePresent: '09.20-09.40', IdProject: '24p14s0010', nameProject:'เสียงสู่มือ' },
-          { id: '2', group: '13', timePresent: '09.40-10.00', IdProject: '24p14s0111', nameProject:'สายรัดข้อมือเพื่อให้ความช่วยเหลือผู้สูงอายุและผู้พิการ' },
+          { id: '1', group: '21.2', timePresent: '09.00-09.20', IdProject: '24p14s00034', nameProject:'เกมเพื่อช่วยในการจดจำตารางธาตุ' },
+          { id: '2', group: '21.2', timePresent: '09.20-09.40', IdProject: '24p14s0010', nameProject:'แอปพลิเคชั่นสำหรับการเรียนรู้ภาษาญี่ปุ่น' },
+          { id: '2', group: '21.2', timePresent: '09.40-10.00', IdProject: '24p14s0111', nameProject:'สื่อการเรียนรู้ตารางธาตุ' },
         ];
 
         const thStyle = { textAlign: 'center' };
   return (
      <>
           <Header />
-          <div style={{maxWidth:'960px',margin:"15px auto"}}>  
-          <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white',display:'flex',justifyContent:'center',alignContent:'center'}}>
+    <div style={{maxWidth:'960px',margin:"15px auto"}}>   
+    <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white',display:'flex',justifyContent:'center',alignContent:'center'}}>
             <h6>ตารางการแข่งขัน</h6>
           </div>    
           <div style={{textAlign:'center',backgroundColor:'#1699E1', overflow:'hidden',borderRadius:'9px',color:'white'}}>
@@ -33,7 +33,7 @@ function ScheduleG5() {
             <h6>
               การนำเสนอผลงาน แต่ละโครงการใช้เวลา 20 นาที (นำเสนอ 15 นาที + ตอบคำถามกรรมการ 5 นาที)
             </h6>
-          </div>
+          </div> 
           <Table striped bordered hover variant="dark">
       <thead>
         <tr>
@@ -47,7 +47,7 @@ function ScheduleG5() {
       <tbody>
         {data.map((item) => (
           <tr key={item.id}>
-            <td style={thStyle}>5</td>
+            <td style={thStyle}>3</td>
             <td style={thStyle}>{item.group}</td>
             <td style={thStyle}>{item.timePresent}</td>
             <td style={thStyle}>{item.IdProject}</td>
@@ -62,7 +62,7 @@ function ScheduleG5() {
     <div style={{color:'red',paddingLeft:'10px'}}>
       <h6>โปรดรักษาวลามาให้ตรงตามเวลาที่กำหนด * </h6>
     </div>
-    </div>
+    </div>    
     <br />
     <ButtonForSchedule />
     <div style={{height:'105px'}}></div>
@@ -71,4 +71,4 @@ function ScheduleG5() {
   )
 }
 
-export default ScheduleG5
+export default ScheduleG3

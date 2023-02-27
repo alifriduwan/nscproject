@@ -1,10 +1,10 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import ButtonForSchedule from '../components/ButtonForSchedule';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import ButtonForSchedule from '../../components/ButtonForSchedule';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
 
-function Scheddule_MTG3() {     
+function Scheddule_MTG2() {     
      const data = [
           { id: '1', group: '21.1', nameProject:'โครี่ พื้นฐานเกาหลีใน 4 สัปดาห์' },
           { id: '2', group: '21.1', nameProject:'ย้อนเวลาศึกษาธรณีกาล' },
@@ -57,4 +57,4 @@ function Scheddule_MTG3() {
   )
 }
 
-export default Scheddule_MTG3
+export default Scheddule_MTG2

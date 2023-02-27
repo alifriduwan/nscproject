@@ -1,22 +1,22 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import Header from '../components/Header';
-import ButtonForSchedule from '../components/ButtonForSchedule';
-import Footer from '../components/Footer';
+import ButtonForSchedule from '../../components/ButtonForSchedule';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
-function ScheduleG4() {     
+function ScheduleG1() {     
      const data = [
-          { id: '1', group: '22', timePresent: '09.00-09.20', IdProject: '24p14s00034', nameProject:'ระบบตรวจวัดและควบคุมการเกิดวัชพืชด้วยเทคโนโลยี LoRaWAN' },
-          { id: '2', group: '22', timePresent: '09.20-09.40', IdProject: '24p14s0010', nameProject:'เครื่องตรวจสอบสภาพดินสำหรับการปลูกทุเรียน' },
-          { id: '2', group: '22', timePresent: '09.40-10.00', IdProject: '24p14s0111', nameProject:'การตรวจหาโรคในทุเรียนจากภาพถ่ายทางอากาศ' },
+          { id: '1', group: '21.1', timePresent: '09.00-09.20', IdProject: '24p14s0008', nameProject:'โครี่ พื้นฐานเกาหลีใน 4 สัปดาห์' },
+          { id: '2', group: '21.1', timePresent: '09.20-09.40', IdProject: '24p14s0010', nameProject:'ย้อนเวลาศึกษาธรณีกาล' },
+          { id: '2', group: '21.1', timePresent: '09.40-10.00', IdProject: '24p14s0111', nameProject:'อี เคอเรนซี่' },
         ];
 
         const thStyle = { textAlign: 'center' };
   return (
      <>
           <Header />
-          <div style={{maxWidth:'960px',margin:"15px auto"}}>
-          <div style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white',display:'flex',justifyContent:'center',alignContent:'center'}}>
+      <div style={{maxWidth:'960px',margin:"15px auto"}}>
+          <div className='text-center' style={{backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white'}}>
             <h6>ตารางการแข่งขัน</h6>
           </div>    
           <div style={{textAlign:'center',backgroundColor:'#1699E1', overflow:'hidden',borderRadius:'9px',color:'white'}}>
@@ -33,9 +33,9 @@ function ScheduleG4() {
             <h6>
               การนำเสนอผลงาน แต่ละโครงการใช้เวลา 20 นาที (นำเสนอ 15 นาที + ตอบคำถามกรรมการ 5 นาที)
             </h6>
-          </div>  
-          <Table striped bordered hover variant="dark">
-      <thead>
+          </div>
+          <Table striped bordered hover variant="dark" responsive="md" style={{width:'100%',borderRadius:'9px'}}> 
+      <thead style={{borderRadius:'9px'}}>
         <tr>
           <th style={thStyle}>กลุ่ม</th>
           <th style={thStyle}>หมวด</th>
@@ -46,12 +46,12 @@ function ScheduleG4() {
       </thead>
       <tbody>
         {data.map((item) => (
-          <tr key={item.id}>
-            <td style={thStyle}>4</td>
+          <tr key={item.id} style={{overflow:'hidden'}}>
+            <td style={thStyle}>1</td>
             <td style={thStyle}>{item.group}</td>
             <td style={thStyle}>{item.timePresent}</td>
             <td style={thStyle}>{item.IdProject}</td>
-            <td>{item.nameProject}</td>
+            <td style={thStyle}>{item.nameProject}</td>
           </tr>
         ))}
       </tbody>
@@ -65,10 +65,10 @@ function ScheduleG4() {
     </div>
     <br />
     <ButtonForSchedule />
-    <div style={{height:'105px'}}></div>
+    <div style={{height:'100px'}}></div>
     <Footer />
      </>
   )
 }
 
-export default ScheduleG4
+export default ScheduleG1

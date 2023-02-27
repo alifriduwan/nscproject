@@ -1,8 +1,8 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import ButtonForSchedule from '../components/ButtonForSchedule';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import ButtonForSchedule from '../../components/ButtonForSchedule';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 function Scheddule_MTG5() {     
      const data = [

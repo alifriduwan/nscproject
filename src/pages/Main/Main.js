@@ -1,12 +1,14 @@
 import React from 'react'
 import './Main.css'
 import Button from 'react-bootstrap/Button';
+import Header from '../../components/Header/Header';
 
 
 
 function Main() {
   return (
-     <>
+     <div>
+          <Header />
           <div class="container-md">
                <div class="container-content" style={{marginTop:'25px'}}>
                     <div style={{marginLeft:'30px'}}>
@@ -26,7 +28,7 @@ function Main() {
                     </div>
                </div>
           </div>
-     </> 
+     </div> 
   )
 }
 
