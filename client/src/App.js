@@ -2,14 +2,8 @@
 //import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
+import Login from './pages/Login/Login';
 import Main from './pages/Main/Main';
-/*import Announce from './components/Announce';
-//import { Container } from "reactstrap";
-import Home from './components/Home';
-import Login from './components/login';
-import Logout from './components/logout';
-import Main from './pages/Main/Main';
-import Registration from './components/regis';*/
 
 function App() {
   return (
@@ -17,6 +11,7 @@ function App() {
   <BrowserRouter>
     <Routes>
       <Route path='/main' element={<Main />} />
+      <Route path='/login' element={<Login />} />
     </Routes>
   </BrowserRouter>
   //</Container>

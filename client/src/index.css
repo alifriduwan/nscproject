@@ -171,3 +171,131 @@ Nav{
 }
 
 /* End Nav */
+
+/* Login */
+.mainLog{
+  background-color: #666666;
+  background-position: center;
+  background-size: cover;
+  /*background-image: url('https://i.pinimg.com/564x/85/57/b7/8557b7f76763360a556ce8d22d68cc13.jpg');*/
+  background-image: linear-gradient(45deg, rgba(0, 128, 255, 1) 0%, rgba(92, 244, 255, 1) 90%);
+}
+
+.item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: 50% 50%;*/
+  align-items: center;
+  justify-content: center;
+  height: 46rem;
+}
+
+.container .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  height: 40rem;
+  padding: 5rem;
+}
+
+.imgLog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  height: 40rem;
+  padding: 3rem;
+}
+
+.imgLog img{
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.form h3{
+  color: #333;
+}
+
+.form span{
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #858383;
+}
+
+.form h6 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  background: #fff;
+  color: #666666;
+  font-size: 12px;
+  width: 7rem;
+  border-radius: 1rem;
+  transform: translate(1.5rem, 0.5rem);
+}
+
+.form input{
+  margin-top: 1rem;
+  border-radius: 2rem;
+  border: 1.3px solid #252525;
+}
+
+.form button{
+  margin: 1.2rem 0;
+  background-image: linear-gradient(45deg, rgba(0, 128, 255, 1) 0%, rgba(92, 244, 255, 1) 90%);
+  width: rem;
+  text-transform: uppercase;
+}
+
+.form p{
+  display: flex;
+  color: #858383;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footerLog{
+  display: flex;
+  height: 3rem;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLog p{
+  color: #666666;
+  margin-top: 1rem;
+}
+
+@media (max-width:700px) {
+  .imgLog{
+    display: none
+  }
+
+  .item{
+    grid-template-columns: auto;
+    height: 55rem;
+  }
+}
+
+@media (max-width:420px) {
+  .form h6 {
+    font-size: 10px;
+  }
+
+  .footerLog p{
+    font-size: 12px;
+  }
+
+  .item{
+    height: 58rem;
+  }
+}
+/* End Login */

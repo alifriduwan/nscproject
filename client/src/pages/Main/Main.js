@@ -2,6 +2,7 @@ import React from 'react'
 import './Main.css'
 import Button from 'react-bootstrap/Button';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -28,6 +29,7 @@ function Main() {
                     </div>
                </div>
           </div>
+          <Footer />
      </div> 
   )
 }
