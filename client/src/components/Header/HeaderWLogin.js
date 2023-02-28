@@ -16,9 +16,11 @@ function HeaderWLogin() {
 
     Swal.fire({
         icon: "warning",
-        title: 'คุณต้องการเข้าสู่ระบบหรือไม่?',
-        text: 'สำหรับผู้เข้าแข่งขัน NSC เท่านั้น',
+        title: 'คุณต้องการออกจากระบบหรือไม่?',
         showCancelButton: true,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonText: 'ตกลง',
