@@ -9,9 +9,12 @@ import Image from 'react-bootstrap/Image'
 
 function HeaderWLogin() {
   return (
-     <Navbar expand="lg" bg="light" style={{paddingBottom:'22.5px',alignItems:'center'}}>
+     <Navbar expand="lg" bg="#333" style={{paddingBottom:'22.5px',alignItems:'center'}}>
       <Container>
-        <Navbar.Brand href="/">s
+        <Navbar.Brand href="/">
+        <div style={{width:'50px',height:'40px'}}> 
+          <img src='../images/LOGO-NSC.png' style={{width:'100%',borderRadius:'100%'}}/>
+        </div>   
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -35,7 +35,11 @@ function Header() {
   }
 
   return (
+<<<<<<< HEAD
     <Navbar expand="lg" bg="light" style={{paddingLeft:'22.5px', paddingRight: '22.5px'}}>
+=======
+    <Navbar expand="lg" bg="#333" style={{paddingBottom:'22.5px'}}>
+>>>>>>> fa560ba (ตกแต่งเพิ่มเติม)
       <Container>
         <Navbar.Brand href="/main"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
         </Navbar.Brand>
@@ -46,7 +50,11 @@ function Header() {
             <NavDropdown className="bar1" title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item className="bar1_1" href="/topic">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />
+<<<<<<< HEAD
               <NavDropdown.Item className="bar1_2" href="">กำหนดการ</NavDropdown.Item>
+=======
+              <NavDropdown.Item href="/scheduleG1">กำหนดการ</NavDropdown.Item>
+>>>>>>> fa560ba (ตกแต่งเพิ่มเติม)
               <hr />
               <NavDropdown.Item className="bar1_3"href="">คุณสมบัติ</NavDropdown.Item>
               <hr />

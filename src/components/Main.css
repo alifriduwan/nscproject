@@ -3,6 +3,18 @@
      /* border: 1px solid red; */
 }
 
+.ปุ่มข่าวสาร {
+     background: #72FFFF;
+     border: none;
+     padding: 5px 15px;
+     border-radius: 8px;
+}
+
+.ปุ่มข่าวสาร:hover{
+     background-color: white;
+     border: 1px solid black;
+}
+
 
 @media only screen and (max-width: 420px) {
 

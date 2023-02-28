@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-      <footer style={{ textAlign: 'center', backgroundColor:'rgb(240, 240, 240)', padding:20}}>
+      <footer style={{ textAlign: 'center', backgroundColor:'#CBD0D8', padding:20}}>
           NSC – Southern Thailand Web เว็บศูนย์ประสานงานโครงการ NSC ภาคใต้
       </footer>
     </div>
