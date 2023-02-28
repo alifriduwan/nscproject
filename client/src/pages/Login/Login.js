@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Col, FormGroup, Input, Row,} from 'reactstrap';
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom';
+import { storeUser } from '../../helper';
 
 const initialUser = { password: "", identifier: ""};
 function Login () {
@@ -16,26 +17,29 @@ function Login () {
         }));
     };
 
+
     const handleLogin = async () => {
         const url = `http://localhost:1337/api/auth/local`;
         const Swal = require('sweetalert2')
             try {
                 if (user.identifier && user.password){
-                    const res = await axios.post(url, user);
-                    console.log({ res })
+                    const { data } = await axios.post(url, user);
+                    console.log(data)
+                    storeUser(data)
                         Swal.fire({
                             icon: "success",
                             title: 'เข้าสู่ระบบสำเร็จ!',
                             text: "ยินดีต้อนรับเข้าสู่เว็บไซต์",
                             confirmButtonColor: '#3085d6',
                             confirmButtonText: 'ตกลง'
-                        }).then((result) => {
+                        })
+        
+                        .then((result) => {
                             if (result.isConfirmed) {
                                 setUser(initialUser);
-                                navigate('/');
+                                navigate('/mainlog');
                             }
                           })
-                            
                         }
             }
             catch (error) {
