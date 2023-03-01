@@ -3,6 +3,7 @@ import Activity from './pages/Activity/Activity';
 import Login from './pages/Login/Login';
 import Main from './pages/Main/Main';
 import MainLog from './pages/Main/MainLogin';
+import AnnounceR1 from './pages/AnnounceTable/AnnounceR1';
 import AnnounceR2 from './pages/AnnounceTable/AnnounceR2';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/mainlog' element={<MainLog />} />
       <Route path='/activity' element={<Activity />} />
+      <Route path='/announceR1' element={<AnnounceR1 />} />
       <Route path='/announceR2' element={<AnnounceR2 />} />
     </Routes>
   </BrowserRouter>

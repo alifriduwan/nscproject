@@ -48,21 +48,11 @@
       "type": "string",
       "default": " "
     },
-    "Scholarship": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "Scholar": {
+      "type": "string"
     },
-    "ScholarshipChamp": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "Final": {
+      "type": "string"
     }
   }
 }
