@@ -40,7 +40,7 @@ function Header() {
   return (
     <Navbar expand="lg" style={{paddingLeft:'22.5px', paddingRight: '22.5px'}}>
       <Container>
-        <Navbar.Brand href="/main"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
+        <Navbar.Brand href="/"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
