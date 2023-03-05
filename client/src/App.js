@@ -6,7 +6,7 @@ import MainLog from './pages/Main/MainLogin';
 import AnnounceR1 from './pages/AnnounceTable/AnnounceR1';
 import AnnounceR2 from './pages/AnnounceTable/AnnounceR2';
 import PlaceContact from './pages/PlaceContact/PlaceContact';
-import Profile from './pages/Profiles/profile';
+import Profile from './pages/Profiles/Profile';
 function App() {
   return (
   //<Container>
