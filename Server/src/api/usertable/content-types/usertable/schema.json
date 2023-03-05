@@ -49,10 +49,12 @@
       "default": " "
     },
     "Scholar": {
-      "type": "string"
+      "type": "string",
+      "default": " "
     },
     "Final": {
-      "type": "string"
+      "type": "string",
+      "default": " "
     }
   }
 }
