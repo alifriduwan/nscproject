@@ -337,3 +337,44 @@ Nav{
   color: #252525;
 }
 /*จบหัวข้อกำหนดการ*/
+
+/*หัวข้อสถานที่ติดต่อ*/
+.PlaceContacthead{
+  background: #E3FCBF;
+  color: #252525;
+}
+
+.PlaceContacthead th{
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.PlaceContact {
+  padding:0.5rem;
+  display: flex;
+  justify-content: center;
+  }
+
+.column1 {
+  background: #D1FFF3;
+  color: #252525;
+}
+
+.column1 th{
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+}
+
+.column2 {
+  background: #DEFCF9;
+  color: #252525;
+}
+
+.contact1{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+/*จบหัวข้อสถานที่ติดต่อ*/

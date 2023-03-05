@@ -7,7 +7,7 @@ class AnnounceR1 extends Component {
     $(document).ready(() => {
       $.ajax({
         method: 'get',
-        url: 'http://localhost:1337/api/result-round1s',
+        url: 'http://localhost:1337/api/usertables',
         success: (response) => {
           console.log(response);
           if (response.data.length > 0) {
@@ -19,15 +19,15 @@ class AnnounceR1 extends Component {
                 <tr style="font-size: 0.7rem; text-align: center;">
                   <th scope="row">${i + 1}</th> 
                   <td>${data.Code}</td>
-                  <td>${data.ProjectName}</td>
-                  <td>${data.Type}</td>
+                  <td>${data.Project}</td>
+                  <td>${data.Class}</td>
                   <td>${data.Level}</td>
                   <td>${data.School}</td>
-                  <td>${data.Teacher}</td>
+                  <td>${data.Advisor}</td>
                   <td>${data.Student1}</td>
                   <td>${data.Student2}</td>
                   <td>${data.Student3}</td>
-                  <td>${data.R2}</td>
+                  <td>${data.Round1}</td>
                 </tr>`;
             }
             $('#tbody').html(html);
