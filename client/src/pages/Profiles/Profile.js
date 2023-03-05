@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import WarnLog from '../../components/Card/WarnLog';
 import { userData } from '../../helper';
 
 function Profile() {
@@ -26,6 +27,14 @@ function Profile() {
         })
           .catch(error => console.log('error', error));
     }, [])
+
+    const User = userData(); 
+    if (!User) {
+         return (
+              <div>
+                   <WarnLog />
+              </div>
+    )} 
 
     return (
         <div>

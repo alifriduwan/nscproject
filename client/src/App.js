@@ -6,6 +6,7 @@ import MainLog from './pages/Main/MainLogin';
 import AnnounceR1 from './pages/AnnounceTable/AnnounceR1';
 import AnnounceR2 from './pages/AnnounceTable/AnnounceR2';
 import PlaceContact from './pages/PlaceContact/PlaceContact';
+import Profile from './pages/Profiles/profile';
 function App() {
   return (
   //<Container>
@@ -18,6 +19,7 @@ function App() {
       <Route path='/announceR1' element={<AnnounceR1 />} />
       <Route path='/announceR2' element={<AnnounceR2 />} />
       <Route path='/PlaceContact' element={<PlaceContact />} />
+      <Route path='/profile' element={<Profile />} />
     </Routes>
   </BrowserRouter>
   //</Container>
