@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import HeaderWLogin from '../../components/Header/HeaderWLogin';
 import { userData } from '../../helper';
-
+import "./Profile.css"
 
 function Profile() {
     const [data, setData] = useState(false);
