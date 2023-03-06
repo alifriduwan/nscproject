@@ -73,7 +73,7 @@ class AnnounceR2 extends Component {
             <div className='Htable'>
               <img className='NSC' src='https://www.nectec.or.th/sectionImage/1339' alt='logo'></img>
               <h6 className="display-4">การแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทย ครั้งที่ 24 (NSC 2022)<br/><br/>
-                                        รายชื่อโครงการที่ผ่านรับทุนรอบนาเสนอผลงาน ศูนย์ประสานงานภูมิภาค ภาคใต้</h6>
+                                        รายชื่อโครงการที่ผ่านรับทุนรอบนำเสนอผลงาน ศูนย์ประสานงานภูมิภาค ภาคใต้</h6>
               <img classname='nstda5' src='https://www.nstda.or.th/archives/wp-content/uploads/2021/08/logo-nstda-202010.png' alt='logo2'></img>
             </div>
               <table className="table table-striped table-hover table-bordered pt-3 align-middle" id="myTable">
