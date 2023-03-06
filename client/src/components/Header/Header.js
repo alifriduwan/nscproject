@@ -77,7 +77,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" style={{columnGap:'20px'}}>
-            <Nav.Link className='nav_link' href="/mainlog">หน้าหลัก</Nav.Link>
+            <Nav.Link className='nav_link' href="/">หน้าหลัก</Nav.Link>
             <NavDropdown className='bar1' title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="/competitiontopics">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />

@@ -1,5 +1,5 @@
 export function storeUser(data) {
-    const expirationTime = Date.now() + 3600000;
+    const expirationTime = Date.now() + 1800000;
     localStorage.setItem(
         'user', 
         JSON.stringify({
@@ -10,7 +10,7 @@ export function storeUser(data) {
     );
     setTimeout(() => {
         localStorage.removeItem('user');
-    }, 3600000);
+    }, 1800000);
 }
 
 export function userData() {
