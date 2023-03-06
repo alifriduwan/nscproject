@@ -37,7 +37,7 @@ function Header() {
           }
           else if (
               result.dismiss === Swal.DismissReason.cancel) {
-                  navigate('/main');
+                  navigate('/');
             }
         })
       }
@@ -62,7 +62,7 @@ function Header() {
             }
             else if (
                 result.dismiss === Swal.DismissReason.cancel) {
-                    navigate('/mainlog');
+                    navigate('/');
               }
           })
       
@@ -72,7 +72,7 @@ function Header() {
           return (
   <Navbar expand="lg" style={{paddingBottom:'22.5px', alignItems: 'center'}}>
       <Container>
-        <Navbar.Brand href="/mainlog"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
+        <Navbar.Brand href="/"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

@@ -33,7 +33,7 @@ function HeaderWLogin() {
         }
         else if (
             result.dismiss === Swal.DismissReason.cancel) {
-                navigate('/mainlog');
+                navigate('/');
           }
       })
   
@@ -42,12 +42,12 @@ function HeaderWLogin() {
   return (
      <Navbar expand="lg" style={{paddingBottom:'22.5px', alignItems: 'center'}}>
       <Container>
-        <Navbar.Brand href="/mainlog"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
+        <Navbar.Brand href="/"><img className='NavLogo' src='https://www.nectec.or.th/sectionImage/1339' alt='logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" style={{columnGap:'20px'}}>
-            <Nav.Link className='nav_link' href="/mainlog">หน้าหลัก</Nav.Link>
+            <Nav.Link className='nav_link' href="/">หน้าหลัก</Nav.Link>
             <NavDropdown className='bar1' title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="/competitiontopics">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />
@@ -64,7 +64,7 @@ function HeaderWLogin() {
             </NavDropdown>
 
             <NavDropdown className='bar1' title="โครงงานของฉัน" id="basic-nav-dropdown" variant="seconddary">
-              <NavDropdown.Item href="Profile">ข้อมูลส่วนตัว</NavDropdown.Item>
+              <NavDropdown.Item href="/profile">ข้อมูลส่วนตัว</NavDropdown.Item>
               <hr />
               <NavDropdown.Item href="#">สถานะโครงการ</NavDropdown.Item>
             </NavDropdown>
