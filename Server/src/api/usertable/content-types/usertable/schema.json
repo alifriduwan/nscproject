@@ -60,6 +60,9 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "mappedBy": "usertable"
+    },
+    "Round1": {
+      "type": "string"
     }
   }
 }

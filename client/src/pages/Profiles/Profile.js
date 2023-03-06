@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import HeaderWLogin from '../../components/Header/HeaderWLogin';
+import Header from '../../components/Header/Header';
 import { userData } from '../../helper';
 import "./Profile.css"
 
@@ -43,7 +43,7 @@ var requestOptions = {
 
     return ( 
         <div>
-            <HeaderWLogin />
+            <Header />
             <div className="container">
                 <div className="card mt-5">
                     <div className="card-body">
@@ -98,6 +98,12 @@ var requestOptions = {
                             <h6>ผู้พัฒนาคนที่ 3</h6>
                             <p>{usertable.Student3}</p>
                         </div>
+
+                        <div className='Username'>
+                            <h6>ผ่านรอบที่ 1</h6>
+                            <p>{usertable.Round1}</p>
+                        </div>
+
                         <div className='Username'>
                             <h6>ทุน</h6>
                             <p>{usertable.Scholar}</p>

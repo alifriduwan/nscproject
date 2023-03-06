@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import Header from '../../components/Header/Header';
+import './Announce.css';
 
 class AnnounceR1 extends Component {
   componentDidMount() {
@@ -44,11 +45,16 @@ class AnnounceR1 extends Component {
   render() {
     return (
       <>
-      <Header />
+<Header />
       <div className="container">
         <div className="card mt-5">
           <div className="card-body">
-            <h3 className="display-4">Round1 result-table</h3>
+            <div className='Htable'>
+              <img className='NSC' src='https://www.nectec.or.th/sectionImage/1339' alt='logo'></img>
+              <h6 className="display-4">การแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทย ครั้งที่ 24 (NSC 2022)<br/><br/>
+                                        รายชื่อโครงการที่ผ่านเข้าแข่งขันรอบที่ 2 ศูนย์ประสานงานภูมิภาค ภาคใต้</h6>
+              <img classname='nstda5' src='https://www.nstda.or.th/archives/wp-content/uploads/2021/08/logo-nstda-202010.png' alt='logo2'></img>
+            </div>
               <table className="table table-striped table-hover table-bordered pt-3 align-middle" id="myTable">
                 <thead>
                   <tr className="align-middle" >
@@ -62,10 +68,10 @@ class AnnounceR1 extends Component {
                     <th scope="col">ผู้พัฒนาคนที่ 1</th>
                     <th scope="col">ผู้พัฒนาคนที่ 2</th>
                     <th scope="col">ผู้พัฒนาคนที่ 3</th>
-                    <th scope="col">ผ่านเข้ารอบ2</th>
+                    <th scope="col">รับทุน</th>
                   </tr>
                 </thead>
-              <tbody id="tbody">
+              <tbody className='bodyR2' id="tbody">
 
               </tbody>
             </table>
@@ -76,5 +82,4 @@ class AnnounceR1 extends Component {
     );
   }
 }
-
 export default AnnounceR1;
