@@ -49,11 +49,11 @@ function Header() {
             <NavDropdown className="bar1" title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item className="bar1_1" href="/topic">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item className="bar1_2" href="">กำหนดการ</NavDropdown.Item>
+              <NavDropdown.Item className="bar1_2" href="/activity">กำหนดการ</NavDropdown.Item>
               <hr />
               <NavDropdown.Item className="bar1_3"href="">คุณสมบัติ</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item className="bar1_4" href="placecontac">สถานที่ติดต่อ</NavDropdown.Item>
+              <NavDropdown.Item className="bar1_4" href="/PlaceContact">สถานที่ติดต่อ</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className="bar2" title="ผลการแข่งขัน" id="basic-nav-dropdown" >
               <NavDropdown.Item className="bar2_1" href="/announceR1">รอบที่ 1</NavDropdown.Item>
