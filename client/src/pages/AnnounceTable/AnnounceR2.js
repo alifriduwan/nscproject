@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import jQuery from "jquery";
 import Header from '../../components/Header/Header';
-import './Announce.css';
+import './AnnounceR2.css';
 import DataTable from 'datatables.net-bs5';
 class AnnounceR2 extends Component {
   componentDidMount() {
