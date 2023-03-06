@@ -113,7 +113,7 @@ function Header() {
               <hr />
               <NavDropdown.Item className="bar1_2" href="/activity">กำหนดการ</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item className="bar1_3"href="">คุณสมบัติ</NavDropdown.Item>
+              <NavDropdown.Item className="bar1_3"href="/qualification">คุณสมบัติ</NavDropdown.Item>
               <hr />
               <NavDropdown.Item className="bar1_4" href="/PlaceContact">สถานที่ติดต่อ</NavDropdown.Item>
             </NavDropdown>
