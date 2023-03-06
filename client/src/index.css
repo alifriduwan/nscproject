@@ -378,3 +378,28 @@ Nav{
   align-items: left;
 }
 /*จบหัวข้อสถานที่ติดต่อ*/
+
+/*หัวข้อการแข่งขัน*/
+.CompetitionTopicshead{
+  background: #E3FCBF;
+  color: #252525;
+}
+
+.CompetitionTopicshead th{
+  padding: 1rem;
+  justify-content: center;
+}
+
+.CompetitionTopics {
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.specialtext {
+  color:red;
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+}
+/*จบหัวข้อการแข่งขัน*/
