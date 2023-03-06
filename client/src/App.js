@@ -8,13 +8,14 @@ import AnnounceR2 from './pages/AnnounceTable/AnnounceR2';
 import PlaceContact from './pages/PlaceContact/PlaceContact';
 import Profile from './pages/Profiles/Profile';
 import CompetitionTopics from './pages/CompetitionTopics/CompetitionTopics';
+import Qualifications from './pages/Qualifications/Qualifications';
 
 function App() {
   return (
   //<Container>
   <BrowserRouter>
     <Routes>
-      <Route path='/main' element={<Main />} />
+      <Route path='/' element={<Main />} />
       <Route path='/login' element={<Login />} />
       <Route path='/mainlog' element={<MainLog />} />
       <Route path='/activity' element={<Activity />} />
@@ -23,6 +24,7 @@ function App() {
       <Route path='/PlaceContact' element={<PlaceContact />} />
       <Route path='/profile' element={<Profile />} />
       <Route path='/competitiontopics' element={<CompetitionTopics />} />
+      <Route path='/qualification' element={<Qualifications />} />
     </Routes>
   </BrowserRouter>
   //</Container>
