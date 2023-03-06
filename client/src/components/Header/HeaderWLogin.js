@@ -64,7 +64,7 @@ function HeaderWLogin() {
             </NavDropdown>
 
             <NavDropdown className='bar1' title="โครงงานของฉัน" id="basic-nav-dropdown" variant="seconddary">
-              <NavDropdown.Item href="#">ข้อมูลส่วนตัว</NavDropdown.Item>
+              <NavDropdown.Item href="Profile">ข้อมูลส่วนตัว</NavDropdown.Item>
               <hr />
               <NavDropdown.Item href="#">สถานะโครงการ</NavDropdown.Item>
             </NavDropdown>
