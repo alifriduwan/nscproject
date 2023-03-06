@@ -37,7 +37,7 @@ function Login () {
                         .then((result) => {
                             if (result.isConfirmed) {
                                 setUser(initialUser);
-                                navigate('/mainlog');
+                                navigate('/main');
                             }
                           })
                         }
