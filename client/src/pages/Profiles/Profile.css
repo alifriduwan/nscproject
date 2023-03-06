@@ -1,0 +1,44 @@
+.mt-5{
+    margin-bottom: 3rem;
+}
+
+.ProfileA h3{
+    background: #4E98B8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.Username p{
+    background: #D3ECDC;
+    color: #414141;
+    margin-bottom: 2px;
+    padding: 0.8rem;
+}
+
+.Username h6{
+    background: #8CC1D3;
+    color: #414141;
+    margin-bottom: 2px;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.Username{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1px;
+}
+
+@media (max-width:410px) {
+    .Username{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h6{
+        text-align: center;
+    }
+
+}
