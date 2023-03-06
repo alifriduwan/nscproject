@@ -1,44 +1,69 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import jQuery from "jquery";
 import Header from '../../components/Header/Header';
+<<<<<<< HEAD
 import './Announce.css';
 
 class AnnounceR1 extends Component {
+=======
+import './AnnounceR2.css';
+import DataTable from 'datatables.net-bs5';
+class AnnounceR2 extends Component {
+>>>>>>> 01faa50f4996fcca3d13cce73f259cd42006f21d
   componentDidMount() {
     $(document).ready(() => {
-      $.ajax({
-        method: 'get',
-        url: 'http://localhost:1337/api/usertables',
-        success: (response) => {
-          console.log(response);
-          if (response.data.length > 0) {
-            let html = '';
-            for (let i = 0; i < response.data.length; i++) {
-              const data = response.data[i].attributes;
-              console.log(data.Code);
-              html += `
-                <tr style="font-size: 0.7rem; text-align: center;">
-                  <th scope="row">${i + 1}</th> 
-                  <td>${data.Code}</td>
-                  <td>${data.Project}</td>
-                  <td>${data.Class}</td>
-                  <td>${data.Level}</td>
-                  <td>${data.School}</td>
-                  <td>${data.Advisor}</td>
-                  <td>${data.Student1}</td>
-                  <td>${data.Student2}</td>
-                  <td>${data.Student3}</td>
-                  <td>${data.Round1}</td>
-                </tr>`;
+        $.ajax({
+          method: 'get',
+          url: 'http://localhost:1337/api/usertables',
+          success: (response) => {
+            console.log(response);
+            if (response.data.length > 0) {
+                let html = '';
+              for (let i = 0; i < response.data.length; i++) {
+                const data = response.data[i].attributes;
+                console.log(data.Code);
+                html += `
+                    <tr class="childT" style="font-size: 0.5rem; text-align: center;">
+                      <td scope="row">${i + 1}</td> 
+                      <td>${data.Code}</td>
+                      <td>${data.Project}</td>
+                      <td>${data.Class}</td>
+                      <td>${data.Level}</td>
+                      <td>${data.School}</td>
+                      <td>${data.Advisor}</td>
+                      <td>${data.Student1}</td>
+                      <td>${data.Student2}</td>
+                      <td>${data.Student3}</td>
+                    </tr>`;
+              }
+              $('#tbody').html(html);
+              if ($.fn.DataTable.isDataTable('#myTable')) {
+                $('#myTable').DataTable().destroy();
+              }
+              $('#myTable').DataTable({
+                "searching": true, // enable search feature
+                "paging": true, // enable page feature
+                "pagingType": "full_numbers",
+                "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ], // set page length options
+                "func": {
+                  "lengthMenu": "แสดง _MENU_ รายการ",
+                  "search": "ค้นหา:",
+                  "searchPlaceholder": "พิมพ์ที่นี่ . . .",
+                  "paginate": {
+                    "first": "หน้าแรก",
+                    "last": "หน้าสุดท้าย",
+                    "next": "ถัดไป",
+                    "previous": "ก่อนหน้า"
+                  }
+                }
+              });
             }
-            $('#tbody').html(html);
-            $('#myTable').DataTable();
+          },
+          error: (err) => {
+            console.log(err);
           }
-        },
-        error: (err) => {
-          console.log(err);
-        }
-      });
+        });
     });
   }
 
@@ -52,7 +77,11 @@ class AnnounceR1 extends Component {
             <div className='Htable'>
               <img className='NSC' src='https://www.nectec.or.th/sectionImage/1339' alt='logo'></img>
               <h6 className="display-4">การแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทย ครั้งที่ 24 (NSC 2022)<br/><br/>
+<<<<<<< HEAD
                                         รายชื่อโครงการที่ผ่านเข้าแข่งขันรอบที่ 2 ศูนย์ประสานงานภูมิภาค ภาคใต้</h6>
+=======
+                                        รายชื่อโครงการที่ผ่านรับทุนรอบนำเสนอผลงาน ศูนย์ประสานงานภูมิภาค ภาคใต้</h6>
+>>>>>>> 01faa50f4996fcca3d13cce73f259cd42006f21d
               <img classname='nstda5' src='https://www.nstda.or.th/archives/wp-content/uploads/2021/08/logo-nstda-202010.png' alt='logo2'></img>
             </div>
               <table className="table table-striped table-hover table-bordered pt-3 align-middle" id="myTable">
@@ -68,7 +97,10 @@ class AnnounceR1 extends Component {
                     <th scope="col">ผู้พัฒนาคนที่ 1</th>
                     <th scope="col">ผู้พัฒนาคนที่ 2</th>
                     <th scope="col">ผู้พัฒนาคนที่ 3</th>
+<<<<<<< HEAD
                     <th scope="col">รับทุน</th>
+=======
+>>>>>>> 01faa50f4996fcca3d13cce73f259cd42006f21d
                   </tr>
                 </thead>
               <tbody className='bodyR2' id="tbody">
@@ -82,4 +114,9 @@ class AnnounceR1 extends Component {
     );
   }
 }
+<<<<<<< HEAD
 export default AnnounceR1;
+=======
+
+export default AnnounceR2;
+>>>>>>> 01faa50f4996fcca3d13cce73f259cd42006f21d
