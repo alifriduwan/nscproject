@@ -55,7 +55,7 @@ function HeaderWLogin() {
               <hr />
               <NavDropdown.Item href="">คุณสมบัติ</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item href="placecontac">สถานที่ติดต่อ</NavDropdown.Item>
+              <NavDropdown.Item href="PlaceContact">สถานที่ติดต่อ</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className='bar2' title="ผลการแข่งขัน" id="basic-nav-dropdown" >
               <NavDropdown.Item href="/announceR1">รอบที่ 1</NavDropdown.Item>
