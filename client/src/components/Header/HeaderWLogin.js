@@ -49,9 +49,9 @@ function HeaderWLogin() {
           <Nav className="ms-auto" style={{columnGap:'20px'}}>
             <Nav.Link className='nav_link' href="/mainlog">หน้าหลัก</Nav.Link>
             <NavDropdown className='bar1' title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
-              <NavDropdown.Item href="/topic">หัวข้อการแข่งขัน</NavDropdown.Item>
+              <NavDropdown.Item href="/competitiontopics">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item href="">กำหนดการ</NavDropdown.Item>
+              <NavDropdown.Item href="activity">กำหนดการ</NavDropdown.Item>
               <hr />
               <NavDropdown.Item href="">คุณสมบัติ</NavDropdown.Item>
               <hr />
