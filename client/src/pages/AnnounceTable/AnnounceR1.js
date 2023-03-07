@@ -9,7 +9,7 @@ class AnnounceR1 extends Component {
     $(document).ready(() => {
         $.ajax({
           method: 'get',
-          url: 'http://localhost:1337/api/usertables',
+          url: 'http://localhost:1337/api/usertables?pagination[page]=1&pagination[pageSize]=100',
           success: (response) => {
             console.log(response);
             if (response.data.length > 0) {
