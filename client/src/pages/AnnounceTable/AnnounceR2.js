@@ -9,7 +9,7 @@ class AnnounceR2 extends Component {
     $(document).ready(() => {
         $.ajax({
           method: 'get',
-          url: 'http://localhost:1337/api/usertables?pagination[page]=1&pagination[pageSize]=70',
+          url: 'http://localhost:1337/api/r2s',
           success: (response) => {
             console.log(response);
             if (response.data.length > 0) {
@@ -41,7 +41,7 @@ class AnnounceR2 extends Component {
                 "searching": true, // enable search feature
                 "paging": true, // enable page feature
                 "pagingType": "full_numbers",
-                "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ], // set page length options
+                "lengthMenu": [ [10, 20, -1], [10, 20, "All"] ], // set page length options
                 "func": {
                   "lengthMenu": "แสดง _MENU_ รายการ",
                   "search": "ค้นหา:",

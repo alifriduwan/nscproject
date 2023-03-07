@@ -40,7 +40,7 @@ class AnnounceR1 extends Component {
                 "searching": true, // enable search feature
                 "paging": true, // enable page feature
                 "pagingType": "full_numbers",
-                "lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ], // set page length options
+                "lengthMenu": [ [10, 20, 30, -1], [10, 20, 30, "All"] ], // set page length options
                 "func": {
                   "lengthMenu": "แสดง _MENU_ รายการ",
                   "search": "ค้นหา:",
