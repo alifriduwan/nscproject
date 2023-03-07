@@ -53,7 +53,8 @@
       "default": " "
     },
     "Final": {
-      "type": "string"
+      "type": "string",
+      "default": " "
     },
     "user": {
       "type": "relation",
@@ -62,7 +63,8 @@
       "mappedBy": "usertable"
     },
     "Round1": {
-      "type": "string"
+      "type": "string",
+      "default": " "
     }
   }
 }
