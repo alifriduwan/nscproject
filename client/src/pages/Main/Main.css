@@ -32,7 +32,7 @@
 
      .container-content h1 {
           font-size: 15px;
-          font-family: 'Courier New', Courier, monospace;
+          
      }
      
      .nav_link {
@@ -44,12 +44,11 @@
      }
      
      h5 {
-          font-family: 'Courier New', Courier, monospace;
           font-size: 15px;
      }
      
      p {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 10px;
      }
 
@@ -71,7 +70,7 @@
 
      .container-content h1 {
           font-size: 24px;
-          font-family: 'Courier New', Courier, monospace;
+          
      }
      
      .nav_link {
@@ -83,12 +82,12 @@
      }
      
      h5 {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 20px;
      }
      
      p {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 14px;
      }
 
@@ -109,7 +108,7 @@
 
      .container-content h1 {
           font-size: 24px;
-          font-family: 'Courier New', Courier, monospace;
+          
      }
      
      .nav_link {
@@ -121,12 +120,12 @@
      }
      
      h5 {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 20px;
      }
      
      p {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 14px;
      }
 
@@ -152,7 +151,7 @@
 
      .container-content h1 {
           font-size: 33px;
-          font-family: 'Courier New', Courier, monospace;
+          
      }
      
      .nav_link {
@@ -164,13 +163,13 @@
      }
      
      h5 {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 25px;
           font-weight: bold;
      }
      
      p {
-          font-family: 'Courier New', Courier, monospace;
+          
           font-size: 18px;
      }
 
