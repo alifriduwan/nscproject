@@ -6,7 +6,9 @@
   font-size: 1rem;
 }
 
-
+body{
+  background-color: #e9e9e9;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -30,7 +32,7 @@ html {
 Nav{
   font-weight: bold;
   letter-spacing: 0.8px;
-  background: #a3c6c4;
+  background-image: linear-gradient(180deg, rgba(171, 220, 255, 1) 0%, rgba(3, 150, 255, 0.61) 100%);
 }
 
 /* Nav Hover */
@@ -38,7 +40,7 @@ Nav{
   position: relative; /* Important */
   border-radius: 10px;
   color: #fff;
-  background: #647a89
+  background: #647a89;
 }
 
 .nav_link::after{
@@ -305,8 +307,9 @@ Nav{
 /* End Logout */
 
 /*หัวข้อกำหนดการ*/
+
 .Activityhead{
-  background: #E3FCBF;
+  background: #f1dd6a;
   color: #252525;
 }
 
@@ -314,81 +317,108 @@ Nav{
   padding: 1rem;
   justify-content: center;
   text-align: center;
+  color: #333;
 }
 
 .Activity {
   padding:1rem;
   display: flex;
   justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
   }
 
-.column1 {
+.column1 td{
   background: #D1FFF3;
-  color: #252525;
+  padding: 15px;
+  padding-left: 20px ;
 }
 
-.column2 {
+.column2 td{
   background: #DEFCF9;
-  color: #252525;
+  color: #454545;
+  padding: 15px;
+  padding-left: 20px ;
 }
 /*จบหัวข้อกำหนดการ*/
 
 /*หัวข้อสถานที่ติดต่อ*/
 .PlaceContacthead{
-  background: #E3FCBF;
+  background: #f1dd6a;
   color: #252525;
 }
 
 .PlaceContacthead th{
   padding: 1rem;
+  font-size: 16px;
   justify-content: center;
   text-align: center;
 }
 
 .PlaceContact {
-  padding:0.5rem;
+  padding:1rem;
   display: flex;
   justify-content: center;
-  }
-
-.column1 {
-  background: #D1FFF3;
-  color: #252525;
-}
-
-.column1 th{
-  font-size: 16px;
-  padding: 15px;
-  text-align: center;
-}
-
-.column2 {
-  background: #DEFCF9;
-  color: #252525;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
 }
 
 .contact1{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+  background: #D1FFF3;
+}
+
+.contact1 p{
+  padding: 0.6rem;
+  font-size: 16px;
+  text-align: center;
+  color: #454545;
 }
 /*จบหัวข้อสถานที่ติดต่อ*/
 
 /*หัวข้อการแข่งขัน*/
 .CompetitionTopicshead{
-  background: #E3FCBF;
+  background: #f1dd6a;
   color: #252525;
 }
 
 .CompetitionTopicshead th{
   padding: 1rem;
   justify-content: center;
+  text-align: center;
+  color: #252525
+}
+
+.Coll1 {
+  background: #D1FFF3;
+  text-align: center;
+}
+
+.Coll2 {
+  background: #DEFCF9;
+  color: #454545;
+  text-align: center;
+}
+
+.Coll1 td{
+  padding: 15px;
+}
+
+.Coll2 td{
+  padding: 15px;
 }
 
 .CompetitionTopics {
   padding:1rem;
   display: flex;
   justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
 }
 
 .specialtext {
@@ -396,5 +426,41 @@ Nav{
   padding:1rem;
   display: flex;
   justify-content: center;
+  font-size: 12px;
 }
 /*จบหัวข้อการแข่งขัน*/
+
+/**************************** คุณสมบัติผู้สมัคร *************************/
+
+.Quality{
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
+}
+
+.CollQ1{
+  background: #D1FFF3;
+}
+
+.CollQ2{
+  background: #DEFCF9;
+  color: #454545;
+}
+
+.CollQ1 td{
+  padding: 15px;
+}
+
+.CollQ2 td{
+  padding: 15px;
+}
+
+.CollQ2 .Secc{
+  padding-left: 50px;
+}
+
+/**************************** คุณสมบัติผู้สมัคร *************************/

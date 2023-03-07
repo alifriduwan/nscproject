@@ -77,15 +77,15 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" style={{columnGap:'20px'}}>
-            <Nav.Link className='nav_link' href="/">หน้าหลัก</Nav.Link>
+            <Nav.Link className='nav_link' href="/main">หน้าหลัก</Nav.Link>
             <NavDropdown className='bar1' title="การแข่งขัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="/competitiontopics">หัวข้อการแข่งขัน</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item href="activity">กำหนดการ</NavDropdown.Item>
+              <NavDropdown.Item href="/activity">กำหนดการ</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item href="">คุณสมบัติ</NavDropdown.Item>
+              <NavDropdown.Item href="/qualification">คุณสมบัติ</NavDropdown.Item>
               <hr />
-              <NavDropdown.Item href="PlaceContact">สถานที่ติดต่อ</NavDropdown.Item>
+              <NavDropdown.Item href="/PlaceContact">สถานที่ติดต่อ</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown className='bar2' title="ผลการแข่งขัน" id="basic-nav-dropdown" >
               <NavDropdown.Item href="/announceR1">รอบที่ 1</NavDropdown.Item>

@@ -50,10 +50,6 @@ var requestOptions = {
                         <div className='ProfileA'>
                             <h3>ข้อมูลส่วนตัว</h3>
                         </div>
-                        <div className='Username'>
-                            <h6>Username</h6>
-                            <p>{username}</p>
-                        </div>
 
                         <div className='Username'>
                             <h6>รหัสโครงการ</h6>
@@ -100,7 +96,7 @@ var requestOptions = {
                         </div>
 
                         <div className='Username'>
-                            <h6>ผ่านรอบที่ 1</h6>
+                            <h6>ภูมิภาค</h6>
                             <p>{usertable.Round1}</p>
                         </div>
 

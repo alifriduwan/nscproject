@@ -18,14 +18,12 @@ function PlaceContact() {
             </tr>
           </thead>
           <tbody>
-            <tr className='column1'>
-              <div className='contact1'>
-              <td>
+            <tr className='contact1'>
+              <div>
                 <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยสงขลานครินทร์</p>
                 <p>โทร: 074-287-076</p>
                 <p>อีเมลล์: wimon@coe.psu.ac.th</p>
                 <p>เฟซบุ๊ก: NSC Thailand Southern Region-(PSU)</p>
-              </td>
               </div>
             </tr>
           </tbody>
