@@ -22,13 +22,13 @@ class AnnounceR1 extends Component {
                       <td scope="row">${i + 1}</td> 
                       <td>${data.Code}</td>
                       <td>${data.Project}</td>
-                      <td>${data.Class}</td>
-                      <td>${data.Level}</td>
-                      <td>${data.School}</td>
-                      <td>${data.Advisor}</td>
-                      <td>${data.Student1}</td>
-                      <td>${data.Student2}</td>
-                      <td>${data.Student3}</td>
+                      <th>${data.Class}</th>
+                      <th>${data.Level}</th>
+                      <th>${data.School}</th>
+                      <th>${data.Advisor}</th>
+                      <th>${data.Student1}</th>
+                      <th>${data.Student2}</th>
+                      <th>${data.Student3}</th>
                       <td>${data.Round1}</td>
                     </tr>`;
               }
@@ -73,7 +73,7 @@ render() {
           <div className='Htable'>
             <img className='NSC' src='https://www.nectec.or.th/sectionImage/1339' alt='logo'></img>
             <h6 className="display-4">การแข่งขันพัฒนาโปรแกรมคอมพิวเตอร์แห่งประเทศไทย ครั้งที่ 24 (NSC 2022)<br/><br/>
-                                      รายชื่อโครงการที่ผ่านรอบที่ 1 ศูนย์ประสานงานภูมิภาค ภาคใต้</h6>
+                                      โครงการที่ผ่านการพิจารณารอบข้อเสนอโครงการศูนย์ประสานงานภูมิภาค"ภาคใต้"</h6>
             <img classname='nstda5' src='https://www.nstda.or.th/archives/wp-content/uploads/2021/08/logo-nstda-202010.png' alt='logo2'></img>
           </div>
             <table className="table table-striped table-hover table-bordered pt-3 align-middle" id="myTable">
@@ -82,14 +82,14 @@ render() {
                   <th scope="col">ID</th>
                   <th scope="col">รหัสโครงการ</th>
                   <th scope="col">โครงการ</th>
-                  <th scope="col">หมวดโครงการ</th>
-                  <th scope="col">ระดับ</th>
-                  <th scope="col">สถาบัน</th>
-                  <th scope="col">อาจารย์ที่ปรึกษา</th>
-                  <th scope="col">ผู้พัฒนาคนที่ 1</th>
-                  <th scope="col">ผู้พัฒนาคนที่ 2</th>
-                  <th scope="col">ผู้พัฒนาคนที่ 3</th>
-                  <th scope="col">ผ่านรอบที่1</th>
+                  <th className='Hide' scope="col">หมวดโครงการ</th>
+                    <th className='Hide' scope="col">ระดับ</th>
+                    <th className='Hide' scope="col">สถาบัน</th>
+                    <th className='Hide' scope="col">อาจารย์ที่ปรึกษา</th>
+                    <th className='Hide' scope="col">ผู้พัฒนาคนที่ 1</th>
+                    <th className='Hide' scope="col">ผู้พัฒนาคนที่ 2</th>
+                    <th className='Hide' scope="col">ผู้พัฒนาคนที่ 3</th>
+                  <th scope="col">ภาค</th>
 
                 </tr>
               </thead>

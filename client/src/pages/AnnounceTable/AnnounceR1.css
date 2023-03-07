@@ -5,6 +5,7 @@ body{
 
 table{
     margin-top: 10px;
+    width: 100% !important;
 }
 
 .Htable{
@@ -48,6 +49,14 @@ table{
     font-size: 10px;
 }
 
+.childT th{
+    text-align: center;
+    background: #fff;
+    color: #4F80C0;
+    font-weight: 100;
+    font-size: 10px;
+}
+
 .dataTables_length label{
     color: #444;
     padding: 20px;
@@ -84,4 +93,14 @@ table{
 
 .dataTables_filter input{
     width: 80%;
+}
+
+@media (max-width:900px) {
+    .childT th{
+        display: none;
+    }
+
+    .Hide{
+        display: none;
+    }
 }

@@ -22,13 +22,13 @@ class AnnounceR2 extends Component {
                       <td scope="row">${i + 1}</td> 
                       <td>${data.Code}</td>
                       <td>${data.Project}</td>
-                      <td>${data.Class}</td>
-                      <td>${data.Level}</td>
-                      <td>${data.School}</td>
-                      <td>${data.Advisor}</td>
-                      <td>${data.Student1}</td>
-                      <td>${data.Student2}</td>
-                      <td>${data.Student3}</td>
+                      <th>${data.Class}</th>
+                      <th>${data.Level}</th>
+                      <th>${data.School}</th>
+                      <th>${data.Advisor}</th>
+                      <th>${data.Student1}</th>
+                      <th>${data.Student2}</th>
+                      <th>${data.Student3}</th>
                       <td>${data.Scholar}</td>
                       <td>${data.Final}</td>
                     </tr>`;
@@ -82,13 +82,13 @@ class AnnounceR2 extends Component {
                     <th scope="col">ID</th>
                     <th scope="col">รหัสโครงการ</th>
                     <th scope="col">โครงการ</th>
-                    <th scope="col">หมวดโครงการ</th>
-                    <th scope="col">ระดับ</th>
-                    <th scope="col">สถาบัน</th>
-                    <th scope="col">อาจารย์ที่ปรึกษา</th>
-                    <th scope="col">ผู้พัฒนาคนที่ 1</th>
-                    <th scope="col">ผู้พัฒนาคนที่ 2</th>
-                    <th scope="col">ผู้พัฒนาคนที่ 3</th>
+                    <th className='Hide' scope="col">หมวดโครงการ</th>
+                    <th className='Hide' scope="col">ระดับ</th>
+                    <th className='Hide' scope="col">สถาบัน</th>
+                    <th className='Hide' scope="col">อาจารย์ที่ปรึกษา</th>
+                    <th className='Hide' scope="col">ผู้พัฒนาคนที่ 1</th>
+                    <th className='Hide' scope="col">ผู้พัฒนาคนที่ 2</th>
+                    <th className='Hide' scope="col">ผู้พัฒนาคนที่ 3</th>
                     <th scope="col">รับทุน</th>
                     <th scope="col">เข้าชิง</th>
                   </tr>
