@@ -99,3 +99,15 @@ table{
         display: none;
     }
 }
+
+@media (max-width:670px) {
+    .Htable img {
+        width: 100px;
+    }
+}
+
+@media (max-width:540px) {
+    .Htable img {
+        width: 80px;
+    }
+}

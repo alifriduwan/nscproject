@@ -8,6 +8,7 @@ import PlaceContact from './pages/PlaceContact/PlaceContact';
 import Profile from './pages/Profiles/Profile';
 import CompetitionTopics from './pages/CompetitionTopics/CompetitionTopics';
 import Qualifications from './pages/Qualifications/Qualifications';
+import Announcepage from './pages/AnnouncePage/Announcepage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/profile' element={<Profile />} />
       <Route path='/competitiontopics' element={<CompetitionTopics />} />
       <Route path='/qualification' element={<Qualifications />} />
+      <Route path='/announcement' element={<Announcepage />} />
     </Routes>
   </BrowserRouter>
   //</Container>

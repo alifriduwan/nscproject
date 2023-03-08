@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "announces",
+  "info": {
+    "singularName": "announce",
+    "pluralName": "announces",
+    "displayName": "Announce",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "default": " ",
+      "required": true
+    },
+    "cover_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
