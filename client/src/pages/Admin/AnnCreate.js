@@ -104,13 +104,13 @@ fetch("http://localhost:1337/api/announces", requestOptions)
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <TextField id="title" label="หัวข้อเรื่อง" variant="outlined" 
-                         fullWidth required 
+                         fullWidth required
                          onChange={(e) => setTitle(e.target.value)}
                          />
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField id="description" label="รายละเอียด" variant="outlined" 
-                         fullWidth required 
+                        <TextField id="description outlined-multiline-static" label="รายละเอียด" variant="outlined" 
+                         fullWidth required multiline maxRows={4}
                          onChange={(e) => setDescription(e.target.value)}
                          />
                     </Grid>
@@ -123,4 +123,11 @@ fetch("http://localhost:1337/api/announces", requestOptions)
     </React.Fragment>
     </div>
   );
-}
+}<TextField
+id="filled-multiline-static"
+label="Multiline"
+multiline
+rows={4}
+defaultValue="Default Value"
+variant="filled"
+/>

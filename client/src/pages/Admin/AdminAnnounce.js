@@ -98,12 +98,12 @@ export default function AdminAnnounce() {
             <Box display={'flex'}>
             <Box sx={{ flexGrow:1  }}>
                 <Typography variant='h6' gutterBottom component='div'>
-                    Announcement
+                    ประกาศข่าวสาร
                 </Typography>
             </Box> 
             <Box>
             <Link href="anncreate">
-                <Button variant="contained">Create</Button>
+                <Button variant="contained">เพิ่มประกาศ</Button>
             </Link>
             </Box>
             </Box>

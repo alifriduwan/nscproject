@@ -9,8 +9,6 @@ import Profile from './pages/Profiles/Profile';
 import CompetitionTopics from './pages/CompetitionTopics/CompetitionTopics';
 import Qualifications from './pages/Qualifications/Qualifications';
 import Announcepage from './pages/AnnouncePage/Announcepage';
-import Users from './pages/Admin/Admin';
-import AdminCreate from './pages/Admin/AdminCreate';
 import AdminAnnounce from './pages/Admin/AdminAnnounce';
 import ScheduleG1 from './pages/ScheduleGroup/ScheduleG1';
 import ScheduleG2 from './pages/ScheduleGroup/ScheduleG2';
@@ -57,6 +55,7 @@ function App() {
       <Route path='/announcement' element={<Announcepage />} />
       <Route path='/adminann' element={<AdminAnnounce />} />
       <Route path='/annupdate/adminann' element={<AdminAnnounce/>} />
+      <Route path='/anncreate' element={<AnnCreate />} />
       <Route path='/annupdate/:id' element={<AnnUpdate/>} />
     </Routes>
   </BrowserRouter>

@@ -66,7 +66,7 @@ export default function HeaderAdmin() {
                     <NavDropdown.Item href="scheduleG1">ตารางการนำเสนอ</NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown className='bar1' title="แก้ไขข้อมูล" id="basic-nav-dropdown" variant="seconddary">
-                    <NavDropdown.Item href="admin">ข้อมูลโครงการ</NavDropdown.Item>
+                    <NavDropdown.Item href="#">ข้อมูลโครงการ</NavDropdown.Item>
                     <hr />
                     <NavDropdown.Item href="adminann">ข่าวสารและประชาสัมพันธ์</NavDropdown.Item>
                   </NavDropdown>
