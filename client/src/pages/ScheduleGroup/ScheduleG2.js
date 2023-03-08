@@ -3,6 +3,8 @@ import Table from 'react-bootstrap/Table';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import ButtonForSchedule from '../../components/ButtonForSchedule';
+import WarnLog from '../../components/Card/WarnLog';
+import { userData } from '../../helper';
 
 function ScheduleG2() {     
      const data = [
@@ -12,6 +14,16 @@ function ScheduleG2() {
         ];
 
         const thStyle = { textAlign: 'center' };
+        const user = userData(); 
+
+  if (!user) {
+    return (
+            <div>
+              <WarnLog />
+            </div>
+          )
+  }
+
   return (
      <>
           <Header />

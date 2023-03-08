@@ -9,7 +9,7 @@ const WarnLog = () => {
     Swal.fire({
       icon: 'error',
       title: 'คุณไม่มีสิทธิ์เข้าถึง',
-      text: 'โปรดทำการล็อคอินเพื่อเข้าชมเว็บไซต์',
+      text: 'โปรดทำการเข้าสู่ระบบเพื่อเข้าชมเว็บไซต์',
       allowOutsideClick: false,
       allowEscapeKey: false,
       allowEnterKey: false,

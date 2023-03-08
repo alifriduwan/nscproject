@@ -122,10 +122,13 @@ function Header() {
               <hr />
               <NavDropdown.Item className="bar2_2" href="/announceR2">รอบที่ 2</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown className='bar1' title="ตารางกิจกรรม" id="basic-nav-dropdown" variant="seconddary">
+              <NavDropdown.Item href="meeting1">ตารางการประชุม</NavDropdown.Item>
+              <hr />
+              <NavDropdown.Item href="scheduleG1">ตารางการนำเสนอ</NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown className='bar1' title="โครงงานของฉัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="Profile">ข้อมูลส่วนตัว</NavDropdown.Item>
-              <hr />
-              <NavDropdown.Item href="#">สถานะโครงการ</NavDropdown.Item>
             </NavDropdown>
             <Button className="confirm-dialog-button" /*variant="outline-primary"*/  onClick={logoutClick}>ออกจากระบบ</Button>{' '}
           </Nav>

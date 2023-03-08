@@ -1,8 +1,10 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
 import ButtonForMeet from '../../components/Button/ButtonForMeeting';
+import WarnLog from '../../components/Card/WarnLog';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import { userData } from '../../helper';
 
 function Scheddule_MTG1() {     
      const data = [
@@ -12,6 +14,16 @@ function Scheddule_MTG1() {
         ];
 
         const thStyle = { textAlign: 'center' };
+        const user = userData(); 
+
+  if (!user) {
+    return (
+            <div>
+              <WarnLog />
+            </div>
+          )
+  }
+
   return (
      <>
           <Header />
