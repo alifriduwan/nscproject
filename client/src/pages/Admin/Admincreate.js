@@ -84,7 +84,8 @@ export default function Admincreate() {
 
   fetch("http://localhost:1337/api/usertables", requestOptions)
     .then(response => response.json())
-    .then(result => {
+    .then(
+      (result) => {
       
       if (Code && Project && Class && Level && School && Advisor && Student1 && Student2 && Student3 && Round1 && Scholar && Final  !== "" ){
         window.location.href = 'Admin'
@@ -108,11 +109,7 @@ export default function Admincreate() {
   const [items,setItems] = useState([]);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  if (!isAuthenticated) {
-    return (
-    <h1>You must be authenticated to view this page.</h1>
-    )
-}
+ 
 
   return (
     <div>
