@@ -8,6 +8,7 @@ import PlaceContact from './pages/PlaceContact/PlaceContact';
 import Profile from './pages/Profiles/Profile';
 import CompetitionTopics from './pages/CompetitionTopics/CompetitionTopics';
 import Qualifications from './pages/Qualifications/Qualifications';
+<<<<<<< Updated upstream
 import Announcepage from './pages/AnnouncePage/Announcepage';
 import AdminAnnounce from './pages/Admin/AdminAnnounce';
 import ScheduleG1 from './pages/ScheduleGroup/ScheduleG1';
@@ -24,6 +25,12 @@ import Scheddule_MTG5 from './pages/Schedule_MTG/Schedule_MTG5';
 import Scheddule_MTG6 from './pages/Schedule_MTG/Schedule_MTG6';
 import AnnCreate from './pages/Admin/AnnCreate';
 import AnnUpdate from './pages/Admin/AnnUpdate';
+=======
+import Users from './pages/Admin/Users';
+import Admincreate from './pages/Admin/Admincreate';
+
+
+>>>>>>> Stashed changes
 
 function App() {
   return (
@@ -40,6 +47,7 @@ function App() {
       <Route path='/profile' element={<Profile />} />
       <Route path='/competitiontopics' element={<CompetitionTopics />} />
       <Route path='/qualification' element={<Qualifications />} />
+<<<<<<< Updated upstream
       <Route path='/scheduleG1' element={<ScheduleG1 />} />
       <Route path='/scheduleG2' element={<ScheduleG2 />} />
       <Route path='/scheduleG3' element={<ScheduleG3 />} />
@@ -57,6 +65,11 @@ function App() {
       <Route path='/annupdate/adminann' element={<AdminAnnounce/>} />
       <Route path='/anncreate' element={<AnnCreate />} />
       <Route path='/annupdate/:id' element={<AnnUpdate/>} />
+=======
+      <Route path='/Admin' element={<Users />} />
+      <Route path='/Admincreate' element={<Admincreate />} />
+      
+>>>>>>> Stashed changes
     </Routes>
   </BrowserRouter>
   //</Container>
