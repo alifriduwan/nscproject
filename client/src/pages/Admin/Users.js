@@ -19,6 +19,23 @@ export default function Users() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
+    UsersGet()
+  }, [])
+
+    const UsersGet = () => {
+        fetch("http://localhost:1337/api/users/me?populate=*")
+        .then(res => res.json())
+        .then(
+            (result) => {
+                setItems(result)
+            }
+        )
+    }
+
+    const UpdateUser = id => {
+        window.location = '/update/'+id
+      }
+
     const user = userData();
     if (user && user.jwt) {
       var myHeaders = new Headers();
@@ -47,17 +64,14 @@ export default function Users() {
             },
             
         )
-  }, [])
-
-  
 
 
   const UserDelete = id => {
     var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify({
-    "id": id
+        "id": id
     });
 
     var requestOptions = {
@@ -72,9 +86,10 @@ export default function Users() {
         .then(result => {
             alert(result['message' ])
             if (result['status'] === 'ok') {
-                UserGet()
+                UsersGet();
             }
-        })
+        }
+    )
         .catch(error => console.log('error', error));
 
     }
@@ -145,8 +160,9 @@ export default function Users() {
                 <TableCell align="center">{row.attributes.Final}</TableCell>
                 <TableCell align="center">
                 <ButtonGroup variant="outlined" aria-label="outlined button group">
-                    <Button>EDIT</Button>
-                    <Button onClick={() => UserDelete(row.id)}>DELETE</Button>
+                    <Button onClick={() => UpdateUser(items.id)}>EDIT</Button>
+                    <Button onClick={() => UserDelete(items.id)}>DELETE</Button>
+
                 </ButtonGroup>
                 </TableCell>
 
