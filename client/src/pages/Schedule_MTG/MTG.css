@@ -1,0 +1,24 @@
+.HeadMT{
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+.SecMT{
+    padding: 5px;
+}
+
+.HeadTab th{
+    background: #ac512a;
+}
+
+.SecTab td{
+    padding: 15px;
+}
+
+.meetlink h6{
+    padding: 10px;
+}
+
+.meettime h6{
+    padding: 10px;
+}
