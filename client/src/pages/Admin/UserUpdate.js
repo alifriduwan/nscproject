@@ -6,28 +6,26 @@ import { Grid,TextField,Typography } from '@mui/material';
 import Header from '../../components/Header/Header';
 import { Button } from 'reactstrap';
 import { userData } from '../../helper';
-import { useParams } from 'react-router-dom';
 
 
 
 export default function UserUpdate() {
-    const {id} = useParams();
-    useEffect(() => {
+  useEffect(() => {
     const user = userData();
-        if (user && user.jwt) {
-            var myHeaders = new Headers();
-                myHeaders.append("Authorization", "Bearer " + user.jwt);
+    if (user && user.jwt) {
+      var myHeaders = new Headers();
+      myHeaders.append("Authorization", "Bearer " + user.jwt);
 
-            var requestOptions = {
-                method: 'GET',
-                headers: myHeaders,
-                redirect: 'follow'
+      var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
       };
 
-      fetch("http://localhost:1337/api/users/me?populate=*"+id, requestOptions)
+      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
       .then(response => response.json())
       .then(result => {
-       
+        console.log(result);
         if (result && result.role && result.role.name === "Authenticated") {
           setIsAuthenticated(true);
         }
@@ -42,7 +40,7 @@ export default function UserUpdate() {
             },
 
         )
-  }, [id])
+  }, [])
   const handleSubmit = event => {
     event.preventDefault();
     const user = userData();
