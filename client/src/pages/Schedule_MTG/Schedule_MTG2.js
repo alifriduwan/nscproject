@@ -1,14 +1,14 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import ButtonForSchedule from '../../components/ButtonForSchedule';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer';
+import Footer from '../../components/Footer/Footer';
+import ButtonForMeet from '../../components/Button/ButtonForMeeting';
 
 function Scheddule_MTG2() {     
      const data = [
-          { id: '1', group: '21.1', nameProject:'โครี่ พื้นฐานเกาหลีใน 4 สัปดาห์' },
-          { id: '2', group: '21.1', nameProject:'ย้อนเวลาศึกษาธรณีกาล' },
-          { id: '2', group: '21.1', nameProject:'อี เคอเรนซี่' },
+          { id: '1', group: '14', nameProject:'ลองดู-ระบบทดลองสินค้าและบริการสำหรับผู้ประกอบการเพื่อการวิจัยตลาดภายใต้สถานการ์ณ Covid-19' },
+          { id: '2', group: '14', nameProject:'พีคอด' },
+          { id: '2', group: '14', nameProject:'GermyJunk:บริการค้นหาและวิเคราะห์จุดรับขยะปนเปื้อนโรคติดเชื้อไวรัสโคโรนา 2019(COVID-19)' },
         ];
 
         const thStyle = { textAlign: 'center' };
@@ -43,14 +43,14 @@ function Scheddule_MTG2() {
       </tbody>
     </Table>
     <div style={{color:'black',paddingLeft:'10px'}}>
-      <h6><a href='#'>ลิงก์การประชุม : https://meet.google.com/wma-xked-kor</a></h6>
+      <h6>ลิงก์การประชุม : https://meet.google.com/wma-xked-kor</h6>
     </div>
     <div style={{color:'red',paddingLeft:'10px'}}>
       <h6>เวลาการประชุม : ตั้งแต่ 15:00 น. เป็นต้นไป </h6>
     </div>
     </div>
     <div style={{height:'120px'}}></div>
-    <ButtonForSchedule />
+    <ButtonForMeet />
     <div style={{height:'110px'}}></div>
     <Footer />
      </>

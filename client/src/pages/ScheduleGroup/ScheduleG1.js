@@ -1,8 +1,8 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import ButtonForSchedule from '../../components/ButtonForSchedule';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import ButtonForSchedule from '../../components/ButtonForSchedule';
 
 function ScheduleG1() {     
      const data = [

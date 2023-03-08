@@ -1,8 +1,8 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import ButtonForSchedule from '../../components/ButtonForSchedule';
+import ButtonForMeet from '../../components/Button/ButtonForMeeting';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer';
 
 function Scheddule_MTG1() {     
      const data = [
@@ -43,14 +43,14 @@ function Scheddule_MTG1() {
       </tbody>
     </Table>
     <div style={{color:'black',paddingLeft:'10px'}}>
-      <h6><a href='#'>ลิงก์การประชุม : https://meet.google.com/wma-xked-kor</a></h6>
+      <h6>ลิงก์การประชุม : https://meet.google.com/wma-xked-kor</h6>
     </div>
     <div style={{color:'red',paddingLeft:'10px'}}>
       <h6>เวลาการประชุม : ตั้งแต่ 15:00 น. เป็นต้นไป </h6>
     </div>
     </div>
     <div style={{height:'120px'}}></div>
-    <ButtonForSchedule />
+    <ButtonForMeet />
     <div style={{height:'110px'}}></div>
     <Footer />
      </>
