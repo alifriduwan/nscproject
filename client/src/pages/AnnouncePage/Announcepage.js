@@ -6,7 +6,7 @@ function Announcepage() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:1337/api/announces?populate=*")
+        fetch("http://localhost:1337/api/announces")
           .then(res => res.json())
           .then(
             (result) => {
@@ -25,7 +25,6 @@ function Announcepage() {
                         { items.map(item => (
                             <Col className='CARDAnn' sm={3} key={item.id} >
                                 <Card className="text-center" style={{ width: '100%' }}>
-                                    <Card.Img variant="top" src={"http://localhost:1337"+item.attributes.cover_img.data.attributes.url} />
                                     <Card.Body>
                                         <Card.Title>{item.attributes.title}</Card.Title>
                                             <Card.Text className=''>

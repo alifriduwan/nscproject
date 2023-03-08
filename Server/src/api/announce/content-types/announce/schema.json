@@ -20,17 +20,6 @@
       "type": "text",
       "default": " ",
       "required": true
-    },
-    "cover_img": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     }
   }
 }

@@ -24,6 +24,8 @@ import Scheddule_MTG3 from './pages/Schedule_MTG/Schedule_MTG3';
 import Scheddule_MTG4 from './pages/Schedule_MTG/Schedule_MTG4';
 import Scheddule_MTG5 from './pages/Schedule_MTG/Schedule_MTG5';
 import Scheddule_MTG6 from './pages/Schedule_MTG/Schedule_MTG6';
+import AnnCreate from './pages/Admin/AnnCreate';
+import AnnUpdate from './pages/Admin/AnnUpdate';
 
 function App() {
   return (
@@ -53,9 +55,9 @@ function App() {
       <Route path='/meeting5' element={<Scheddule_MTG5 />} />
       <Route path='/meeting6' element={<Scheddule_MTG6 />} />
       <Route path='/announcement' element={<Announcepage />} />
-      <Route path='/admin' element={<Users />} />
       <Route path='/adminann' element={<AdminAnnounce />} />
-      <Route path='/admincreate' element={<AdminCreate/>} />
+      <Route path='/annupdate/adminann' element={<AdminAnnounce/>} />
+      <Route path='/annupdate/:id' element={<AnnUpdate/>} />
     </Routes>
   </BrowserRouter>
   //</Container>
