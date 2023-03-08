@@ -26,6 +26,7 @@ import AnnCreate from './pages/Admin/AnnCreate';
 import AnnUpdate from './pages/Admin/AnnUpdate';
 import Admincreate from './pages/Admin/Admincreate';
 import Users from './pages/Admin/Users';
+import UserUpdate from './pages/Admin/UserUpdate';
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
       <Route path='/annupdate/:id' element={<AnnUpdate/>} />
       <Route path='/Admin' element={<Users />} />
       <Route path='/Admincreate' element={<Admincreate />} />
+      <Route path='/UserUpdate/Admin ' element={<UserUpdate />} />
       
     </Routes>
   </BrowserRouter>
