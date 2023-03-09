@@ -13,29 +13,17 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Link from '@mui/material/Link';
 import { userData } from '../../helper';
+import HeaderAdmin from './HeaderAdmin';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import WarnLog from '../../components/Card/WarnLog';
 
 export default function Users() {
   const [items,setItems] = useState([]);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    UsersGet()
-  }, [])
-
-    const UsersGet = () => {
-        fetch("http://localhost:1337/api/users/me?populate=*")
-        .then(res => res.json())
-        .then(
-            (result) => {
-                setItems(result)
-            }
-        )
-    }
-
-    const UpdateUser = id => {
-        window.location = '/update/'+id
-      }
-
     const user = userData();
     if (user && user.jwt) {
       var myHeaders = new Headers();
@@ -56,36 +44,43 @@ export default function Users() {
       })
       .catch(error => console.log('error', error));
     }
+        
+    UsersGet()
+  }, [])
+
+    const UsersGet = () => {
         fetch("http://localhost:1337/api/usertables?pagination[page]=1&pagination[pageSize]=50")
         .then(res => res.json())
         .then(
             (result) => {
-            setItems(result.data);
-            },
-            
+                setItems(result.data)
+            }
         )
+    }
+
+    const UpdateUser = id => {
+        window.location = '/Adminupdate/'+id
+      }
+
+    
 
 
   const UserDelete = id => {
+    const user = userData();
     var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({
-        "id": id
-    });
+    myHeaders.append("Authorization", "Bearer " + user.jwt);
+    myHeaders.append("Content-Type", "application/json");
 
     var requestOptions = {
         method: 'DELETE',
         headers: myHeaders,
-        body: raw,
         redirect: 'follow'
     };
-
-    fetch("http://localhost:1337/api/usertables"+id, requestOptions)
-        .then(response => response.json())
-        .then(result => {
-            alert(result['message' ])
-            if (result['status'] === 'ok') {
+    fetch("http://localhost:1337/api/usertables/"+id, requestOptions)
+    .then(response => response.json())
+    .then(result => {
+    console.log(result)
+            if (id !== ""){ 
                 UsersGet();
             }
         }
@@ -94,9 +89,15 @@ export default function Users() {
 
     }
 
+    if (!isAuthenticated) {
+        return (
+            <h1>You must be authenticated to view this page.</h1>
+        )
+      }
 
   return (
     <div>
+        <HeaderAdmin />
         <React.Fragment>
         <CssBaseline />
         <Container maxWidth="lg" sx={{p:2}}>
@@ -104,12 +105,12 @@ export default function Users() {
             <Box display={'flex'}>
             <Box sx={{ flexGrow:1  }}>
                 <Typography variant='h6' gutterBottom component='div'>
-                Users
+                    ข้อมูลโครงการ
                 </Typography>
             </Box> 
             <Box>
             <Link href="/admincreate">
-                <Button variant="contained">Create</Button>
+                <Button variant="contained" color="success"  style={{marginBottom: '20px'}}>เพิ่มโครงการ <PersonAddIcon style={{paddingLeft : '5px'}}/></Button>
             </Link>
             </Box>
             </Box>
@@ -131,37 +132,37 @@ export default function Users() {
                 <TableCell align="center">ภูมิภาค</TableCell>
                 <TableCell align="center">ทุน</TableCell>
                 <TableCell align="center">เข้าชิง</TableCell>
-                <TableCell align="center">แก้ไข</TableCell>
+                <TableCell align="center">ตั้งค่า</TableCell>
 
 
 
             </TableRow>
             </TableHead>
             <TableBody>
-            {items.map((row) => (
+            {items.map((item) => (
                 <TableRow
-                key={row.id}
+                key={item.id}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                 <TableCell component="th" scope="row">
-                    {row.id}
+                    {item.id}
                 </TableCell>
-                <TableCell align="center">{row.attributes.Code}</TableCell>
-                <TableCell align="center">{row.attributes.Project}</TableCell>
-                <TableCell align="center">{row.attributes.Class}</TableCell>
-                <TableCell align="center">{row.attributes.Level}</TableCell>
-                <TableCell align="center">{row.attributes.School}</TableCell>
-                <TableCell align="center">{row.attributes.Advisor}</TableCell>
-                <TableCell align="center">{row.attributes.Student1}</TableCell>
-                <TableCell align="center">{row.attributes.Student2}</TableCell>
-                <TableCell align="center">{row.attributes.Student3}</TableCell>
-                <TableCell align="center">{row.attributes.Round1}</TableCell>
-                <TableCell align="center">{row.attributes.Scholar}</TableCell>
-                <TableCell align="center">{row.attributes.Final}</TableCell>
+                <TableCell align="center">{item.attributes.Code}</TableCell>
+                <TableCell align="center">{item.attributes.Project}</TableCell>
+                <TableCell align="center">{item.attributes.Class}</TableCell>
+                <TableCell align="center">{item.attributes.Level}</TableCell>
+                <TableCell align="center">{item.attributes.School}</TableCell>
+                <TableCell align="center">{item.attributes.Advisor}</TableCell>
+                <TableCell align="center">{item.attributes.Student1}</TableCell>
+                <TableCell align="center">{item.attributes.Student2}</TableCell>
+                <TableCell align="center">{item.attributes.Student3}</TableCell>
+                <TableCell align="center">{item.attributes.Round1}</TableCell>
+                <TableCell align="center">{item.attributes.Scholar}</TableCell>
+                <TableCell align="center">{item.attributes.Final}</TableCell>
                 <TableCell align="center">
                 <ButtonGroup variant="outlined" aria-label="outlined button group">
-                    <Button onClick={() => UpdateUser(items.id)}>EDIT</Button>
-                    <Button onClick={() => UserDelete(items.id)}>DELETE</Button>
+                    <Button onClick={() => UpdateUser(item.id)}>แก้ไข  <EditOutlinedIcon /></Button>
+                    <Button onClick={() => UserDelete(item.id)} color="error">ลบ <DeleteOutlinedIcon /></Button>
 
                 </ButtonGroup>
                 </TableCell>

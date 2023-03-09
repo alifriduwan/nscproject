@@ -13,6 +13,9 @@ import TableRow from '@mui/material/TableRow';
 import Link from '@mui/material/Link';
 import { userData } from '../../helper';
 import HeaderAdmin from './HeaderAdmin';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import NoteAddIcon from '@mui/icons-material/NoteAdd';
 
 export default function AdminAnnounce() {
   const [items,setItems] = useState([]);
@@ -102,8 +105,8 @@ export default function AdminAnnounce() {
                 </Typography>
             </Box> 
             <Box>
-            <Link href="anncreate">
-                <Button variant="contained">เพิ่มประกาศ</Button>
+            <Link href="/anncreate">
+                <Button variant="contained" color="success" size="medium" style={{marginBottom: '20px'}}>เพิ่มประกาศ <NoteAddIcon style={{paddingLeft : '5px'}}/></Button>
             </Link>
             </Box>
             </Box>
@@ -131,8 +134,8 @@ export default function AdminAnnounce() {
                 <TableCell align="center">{item.attributes.description}</TableCell>
                 <TableCell align="center">
                   <ButtonGroup variant="outlined" aria-label="outlined button group">
-                    <Button onClick={() => AnnEdit(item.id)}>แก้ไข</Button>
-                    <Button onClick={() => AnnDel(item.id)}>ลบ</Button>
+                    <Button onClick={() => AnnEdit(item.id)}>แก้ไข <EditOutlinedIcon /> </Button>
+                    <Button onClick={() => AnnDel(item.id)} color="error">ลบ <DeleteOutlinedIcon/> </Button>
                   </ButtonGroup>
                 </TableCell>
                 </TableRow>

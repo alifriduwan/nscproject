@@ -1,13 +1,10 @@
 import React, { useEffect, useState} from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Grid,TextField,Typography } from '@mui/material';
-import Header from '../../components/Header/Header';
 import { Button } from 'reactstrap';
 import { userData } from '../../helper';
-
-
+import HeaderAdmin from './HeaderAdmin';
 
 export default function Admincreate() {
   useEffect(() => {
@@ -84,8 +81,7 @@ export default function Admincreate() {
 
   fetch("http://localhost:1337/api/usertables", requestOptions)
     .then(response => response.json())
-    .then(
-      (result) => {
+    .then(result => {
       
       if (Code && Project && Class && Level && School && Advisor && Student1 && Student2 && Student3 && Round1 && Scholar && Final  !== "" ){
         window.location.href = 'Admin'
@@ -109,16 +105,20 @@ export default function Admincreate() {
   const [items,setItems] = useState([]);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
- 
+  if (!isAuthenticated) {
+    return (
+    <h1>You must be authenticated to view this page.</h1>
+    )
+}
 
   return (
     <div>
-    <Header/>
+    <HeaderAdmin/>
       <React.Fragment>
         <CssBaseline />
         <Container maxWidth="sm" sx={{p:2}}>
-          <Typography variant='h6' gutterBootom component='div'>
-            Create user
+          <Typography variant='h6' gutterBootom component='div'  style={{marginBottom: '1rem', textAlign: 'center'}}>
+            เพิ่มข้อมูลโครงการ
           </Typography>
           <form onSubmit={handleSubmit}>
             <Grid container spacing={2}>
@@ -133,7 +133,7 @@ export default function Admincreate() {
                 onChange={(e) => setProject(e.target.value)} />
 
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField id="Class" label="หมวดโครงการ" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setClass(e.target.value)} />
@@ -151,53 +151,51 @@ export default function Admincreate() {
                 onChange={(e) => setSchool(e.target.value)} />
 
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField id="Advisor" label="อาจาร์ยที่ปรึกษา" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setAdvisor(e.target.value)} />
 
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField id="Student1" label="ผู้พัฒนาคนที่ 1" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setStudent1(e.target.value)} />
 
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField id="Student2" label="ผู้พัฒนาคนที่ 2" variant="outlined" 
+              <Grid item xs={12} >
+                <TextField id="Student2" label="ผู้พัฒนาคนที่ 2 (หากไม่มีระบุเว้นวรรค)" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setStudent2(e.target.value)} />
 
               </Grid>
               <Grid item xs={12} sm={6}>
-                <TextField id="Student3" label="ผู้พัฒนาคนที่ 3" variant="outlined" 
+                <TextField id="Student3" label="ผู้พัฒนาคนที่ 3 (หากไม่มีระบุเว้นวรรค)" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setStudent3(e.target.value)} />
 
               </Grid>
               <Grid item xs={12} sm={6}>
-                <TextField id="Scholar" label="เข้ารอบได้รับเกียรติบัตร" variant="outlined" 
+                <TextField id="Round1" label="ภูมิภาค" variant="outlined" 
+                fullWidth required 
+                onChange={(e) => setRound1(e.target.value)} />
+
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField id="Scholar" label="ได้รับทุน (หากไม่มีระบุเว้นวรรค)" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setScholar(e.target.value)} />
 
               </Grid>
               <Grid item xs={12} sm={6}>
-                <TextField id="Final" label="ผ่านเข้าชิง" variant="outlined" 
+                <TextField id="Final" label="ผ่านเข้าชิง (หากไม่มีระบุเว้นวรรค)" variant="outlined" 
                 fullWidth required 
                 onChange={(e) => setFinal(e.target.value)} />
 
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField id="Round1" label="ภาค" variant="outlined" 
-                fullWidth required 
-                onChange={(e) => setRound1(e.target.value)} />
-
-              </Grid>
-              <Grid item xs={12} >
-                <Button type="submit" 
-                variant="contained" 
-                fullWidth >Create</Button>
-
+              
+              <Grid item xs={12}>
+                <Button fullWidth type="submit" variant="contained" color="success" style={{width: '100%'}}>เพิ่ม</Button>
               </Grid>
             </Grid>
           </form>

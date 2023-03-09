@@ -4,7 +4,6 @@ import Container from '@mui/material/Container';
 import HeaderAdmin from './HeaderAdmin';
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import { userData } from '../../helper';
-import WarnLog from '../../components/Card/WarnLog';
 
 export default function AnnCreate() {
 const [ title, setTitle ] = useState('');
@@ -97,8 +96,8 @@ fetch("http://localhost:1337/api/announces", requestOptions)
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm" sx={{ p: 2 }}>
-            <Typography variant='h6' gutterBottom component='div'>
-                Create Announcement
+            <Typography variant='h6' gutterBottom component='div' style={{marginBottom: '1rem', textAlign: 'center'}}>
+                เพิ่มประกาศ
             </Typography>
             <form onSubmit={ handleSubmit }>
                 <Grid container spacing={2}>

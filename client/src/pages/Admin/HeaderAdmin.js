@@ -61,14 +61,14 @@ export default function HeaderAdmin() {
                     <NavDropdown.Item className="bar2_2" href="/announceR2">รอบที่ 2</NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown className='bar1' title="ตารางกิจกรรม" id="basic-nav-dropdown" variant="seconddary">
-                    <NavDropdown.Item href="meeting1">ตารางการประชุม</NavDropdown.Item>
+                    <NavDropdown.Item href="/meeting1">ตารางการประชุม</NavDropdown.Item>
                     <hr />
-                    <NavDropdown.Item href="scheduleG1">ตารางการนำเสนอ</NavDropdown.Item>
+                    <NavDropdown.Item href="/scheduleG1">ตารางการนำเสนอ</NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown className='bar1' title="แก้ไขข้อมูล" id="basic-nav-dropdown" variant="seconddary">
-                    <NavDropdown.Item href="#">ข้อมูลโครงการ</NavDropdown.Item>
+                    <NavDropdown.Item href="/Admin">ข้อมูลโครงการ</NavDropdown.Item>
                     <hr />
-                    <NavDropdown.Item href="adminann">ข่าวสารและประชาสัมพันธ์</NavDropdown.Item>
+                    <NavDropdown.Item href="/adminann">ข่าวสารและประชาสัมพันธ์</NavDropdown.Item>
                   </NavDropdown>
                   <Button className="confirm-dialog-button" /*variant="outline-primary"*/  onClick={logoutClick}>ออกจากระบบ</Button>{' '}
                 </Nav>

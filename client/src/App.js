@@ -30,7 +30,6 @@ import UserUpdate from './pages/Admin/UserUpdate';
 
 function App() {
   return (
-  //<Container>
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<Main />} />
@@ -57,16 +56,13 @@ function App() {
       <Route path='/meeting6' element={<Scheddule_MTG6 />} />
       <Route path='/announcement' element={<Announcepage />} />
       <Route path='/adminann' element={<AdminAnnounce />} />
-      <Route path='/annupdate/adminann' element={<AdminAnnounce/>} />
       <Route path='/anncreate' element={<AnnCreate />} />
       <Route path='/annupdate/:id' element={<AnnUpdate/>} />
       <Route path='/Admin' element={<Users />} />
       <Route path='/Admincreate' element={<Admincreate />} />
-      <Route path='/Update/:id' element={<UserUpdate />} />
-      
+      <Route path='/Adminupdate/:id' element={<UserUpdate />} />
     </Routes>
   </BrowserRouter>
-  //</Container>
   );
 };
 

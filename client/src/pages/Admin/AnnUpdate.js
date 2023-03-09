@@ -90,7 +90,7 @@ fetch("http://localhost:1337/api/announces/"+id, requestOptions)
   .then(result => {
     console.log(result)
     if (title && description !== "" ){
-        window.location.href = 'adminann'
+        window.location.href = '/adminann'
     }
   })
   .catch(error => console.log('error', error));
@@ -108,8 +108,8 @@ fetch("http://localhost:1337/api/announces/"+id, requestOptions)
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm" sx={{ p: 2 }}>
-            <Typography variant='h6' gutterBottom component='div'>
-                Update Announcement
+            <Typography variant='h6' gutterBottom component='div' style={{marginBottom: '1rem', textAlign: 'center'}}>
+                แก้ไขข้อมูลประกาศ
             </Typography>
             <form onSubmit={ handleSubmit }>
                 <Grid container spacing={2}>
