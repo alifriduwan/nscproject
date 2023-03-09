@@ -127,7 +127,7 @@ function Header() {
               <hr />
               <NavDropdown.Item href="scheduleG1">ตารางการนำเสนอ</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown className='bar1' title="โครงงานของฉัน" id="basic-nav-dropdown" variant="seconddary">
+            <NavDropdown className='bar1' title="โครงการของฉัน" id="basic-nav-dropdown" variant="seconddary">
               <NavDropdown.Item href="Profile">ข้อมูลส่วนตัว</NavDropdown.Item>
             </NavDropdown>
             <Button className="confirm-dialog-button" /*variant="outline-primary"*/  onClick={logoutClick}>ออกจากระบบ</Button>{' '}
