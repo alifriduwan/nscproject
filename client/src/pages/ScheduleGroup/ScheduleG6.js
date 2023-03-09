@@ -32,7 +32,7 @@ function ScheduleG6() {
          <div className="card mt-5">
            <div className="card-body">
              <div style={{maxWidth:'960px',margin:"15px auto"}}>
-                 <div className='HeadTable' style={{backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white'}}>
+                 <div className='HeadTable' style={{backgroundColor:'#006ebc',overflow:'hidden',borderRadius:'9px',color:'white'}}>
                    <h6>ตารางการแข่งขัน</h6>
                  </div>    
                  <div className='SecTable' style={{textAlign:'center',backgroundColor:'#1699E1', overflow:'hidden',borderRadius:'9px',color:'white'}}>
@@ -50,7 +50,7 @@ function ScheduleG6() {
                      การนำเสนอผลงาน แต่ละโครงการใช้เวลา 20 นาที (นำเสนอ 15 นาที + ตอบคำถามกรรมการ 5 นาที)
                    </h6>
                  </div>
-                 <Table striped bordered hover variant="dark" responsive="md" style={{width:'100%',borderRadius:'9px'}}> 
+                 <Table striped bordered hover variant="white" responsive="md" style={{width:'100%',borderRadius:'9px'}}> 
                    <thead style={{borderRadius:'9px'}}>
                      <tr className='TableHeader'>
                        <th style={thStyle}>กลุ่ม</th>

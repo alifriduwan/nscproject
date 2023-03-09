@@ -12,11 +12,12 @@
 }
 
 .TableHeader th{
-    background: #ac512a;
+    background: #f1dd6a;
 }
 
 .TableSec td{
     padding: 15px;
+    background: #D1FFF3;
 }
 
 .Meeting{
