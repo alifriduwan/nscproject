@@ -1,0 +1,28 @@
+.HeadTable h6{
+    padding: 10px;
+    text-align: center;
+}
+
+.SecTable h6{
+    padding: 4px;
+}
+
+.ThdTable h6{
+    padding: 2px;
+}
+
+.TableHeader th{
+    background: #ac512a;
+}
+
+.TableSec td{
+    padding: 15px;
+}
+
+.Meeting{
+    padding: 10px;
+}
+
+.Warnning{
+    padding: 10px;
+}

@@ -1,0 +1,466 @@
+* { 
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body{
+  background-color: #e9ecfbd6;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+.clearfix{
+  clear: both;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Nav */
+Nav{
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  background-image: linear-gradient(180deg, rgba(171, 220, 255, 1) 0%, rgba(3, 150, 255, 0.61) 100%);
+}
+
+/* Nav Hover */
+.nav_link{
+  position: relative; /* Important */
+  border-radius: 10px;
+  color: #fff;
+  background: #647a89;
+}
+
+.nav_link::after{
+  content: '';
+  position: absolute;
+  width: 5%;
+  opacity: 0;
+  height: 5px;
+  background: #647a89;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  transition: .4s;
+}
+
+.nav_link:hover:after{
+  width: 50%;
+  opacity: 1;
+}
+
+.bar1{
+  position: relative;
+}
+
+.bar1::after{
+  content: '';
+  position: absolute;
+  width: 5%;
+  opacity: 0;
+  height: 5px;
+  background: #647a89;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  transition: .4s;
+}
+
+.bar1:hover:after{
+  width: 50%;
+  opacity: 1;
+}
+
+.bar2{
+  position: relative;
+}
+
+.bar2::after{
+  content: '';
+  position: absolute;
+  width: 5%;
+  opacity: 0;
+  height: 5px;
+  background: #647a89;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  transition: .4s;
+}
+
+.bar2:hover::after{
+  width: 50%;
+  opacity: 1;
+}
+
+.confirm-dialog-button{
+  position: relative;
+  border-radius: 10px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #3498db;
+  color: #3498db;
+  transition: 0.8s;
+}
+
+.confirm-dialog-button:hover{
+  color: #fff;
+  background: #647a89;
+  border: 1px solid #647a89;
+  transition: 0.8s;
+}
+
+/* End Nav Hover */
+.NavLogo{
+  display: flex;
+  width: 4rem;
+}
+
+@media (max-width:992px) {
+  .nav_link, 
+  .bar1, 
+  .bar2,  
+  .confirm-dialog-button {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .ms-auto{
+    display: flex;
+    justify-items: center;
+  }
+
+  .navbar-nav .dropdown-menu{
+    position: static
+  }
+
+  .nav_link:hover:after{
+    width: 15%;
+    opacity: 1;
+  }
+
+  .bar1:hover:after{
+    width: 15%;
+    opacity: 1;
+  }
+
+  .bar2:hover:after{
+    width: 15%;
+    opacity: 1;
+  }
+
+}
+
+/* End Nav */
+
+/* Login */
+.mainLog{
+  background-color: #666666;
+  background-position: center;
+  background-size: cover;
+  /*background-image: url('https://i.pinimg.com/564x/85/57/b7/8557b7f76763360a556ce8d22d68cc13.jpg');*/
+  background-image: linear-gradient(45deg, rgba(0, 128, 255, 1) 0%, rgba(92, 244, 255, 1) 90%);
+}
+
+.item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: 50% 50%;*/
+  align-items: center;
+  justify-content: center;
+  height: 46rem;
+}
+
+.container .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  height: 40rem;
+  padding: 5rem;
+}
+
+.imgLog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  height: 40rem;
+  padding: 3rem;
+}
+
+.imgLog img{
+  width: 100%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.form h3{
+  color: #333;
+}
+
+.form span{
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #858383;
+}
+
+.form h6 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  background: #fff;
+  color: #666666;
+  font-size: 12px;
+  width: 7rem;
+  border-radius: 1rem;
+  transform: translate(1.5rem, 0.5rem);
+}
+
+.form input{
+  margin-top: 1rem;
+  border-radius: 2rem;
+  border: 1.3px solid #252525;
+}
+
+.form button{
+  margin: 1.2rem 0;
+  background-image: linear-gradient(45deg, rgba(0, 128, 255, 1) 0%, rgba(92, 244, 255, 1) 90%);
+  width: rem;
+  text-transform: uppercase;
+}
+
+.form p{
+  display: flex;
+  color: #858383;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footerLog{
+  display: flex;
+  height: 3rem;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footerLog p{
+  color: #666666;
+  margin-top: 1rem;
+}
+
+@media (max-width:700px) {
+  .imgLog{
+    display: none
+  }
+
+  .item{
+    grid-template-columns: auto;
+    height: 55rem;
+  }
+}
+
+@media (max-width:420px) {
+  .form h6 {
+    font-size: 10px;
+  }
+
+  .footerLog p{
+    font-size: 12px;
+  }
+
+  .item{
+    height: 58rem;
+  }
+}
+/* End Login */
+
+/* Logout */
+
+.bgLogout{
+  background: #666666;
+  height: 555rem;
+}
+
+/* End Logout */
+
+/*หัวข้อกำหนดการ*/
+
+.Activityhead{
+  background: #f1dd6a;
+  color: #252525;
+}
+
+.Activityhead th{
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+.Activity {
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
+  }
+
+.column1 td{
+  background: #D1FFF3;
+  padding: 15px;
+  padding-left: 20px ;
+}
+
+.column2 td{
+  background: #DEFCF9;
+  color: #454545;
+  padding: 15px;
+  padding-left: 20px ;
+}
+/*จบหัวข้อกำหนดการ*/
+
+/*หัวข้อสถานที่ติดต่อ*/
+.PlaceContacthead{
+  background: #f1dd6a;
+  color: #252525;
+}
+
+.PlaceContacthead th{
+  padding: 1rem;
+  font-size: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.PlaceContact {
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
+}
+
+.contact1{
+  background: #D1FFF3;
+}
+
+.contact1 p{
+  padding: 0.6rem;
+  font-size: 16px;
+  text-align: center;
+  color: #454545;
+}
+/*จบหัวข้อสถานที่ติดต่อ*/
+
+/*หัวข้อการแข่งขัน*/
+.CompetitionTopicshead{
+  background: #f1dd6a;
+  color: #252525;
+}
+
+.CompetitionTopicshead th{
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: #252525
+}
+
+.Coll1 {
+  background: #D1FFF3;
+  text-align: center;
+}
+
+.Coll2 {
+  background: #DEFCF9;
+  color: #454545;
+  text-align: center;
+}
+
+.Coll1 td{
+  padding: 15px;
+}
+
+.Coll2 td{
+  padding: 15px;
+}
+
+.CompetitionTopics {
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
+}
+
+.specialtext {
+  color:red;
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+/*จบหัวข้อการแข่งขัน*/
+
+/**************************** คุณสมบัติผู้สมัคร *************************/
+
+.Quality{
+  padding:1rem;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background: #006ebc;
+  color: #f3f2f2;
+  border-radius: 10px;
+}
+
+.CollQ1{
+  background: #D1FFF3;
+}
+
+.CollQ2{
+  background: #DEFCF9;
+  color: #454545;
+}
+
+.CollQ1 td{
+  padding: 15px;
+}
+
+.CollQ2 td{
+  padding: 15px;
+}
+
+.CollQ2 .Secc{
+  padding-left: 50px;
+}
+
+/**************************** คุณสมบัติผู้สมัคร *************************/

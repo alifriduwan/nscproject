@@ -1,0 +1,203 @@
+.btn-ข่าวสารและประชาสัมพันธ์ {
+     text-decoration: none;
+     border: solid 1px #333;
+     padding: .5rem 1.5rem;
+     color: #333;
+     border-radius: 15px;
+}
+
+.btn-ข่าวสารและประชาสัมพันธ์:hover {
+     background-color: #006ebc;
+     border:none;
+     color: #ececec;
+     border: 2px solid #fff;
+}
+
+.display-6{
+     font-weight: bold;
+}
+
+hr {
+     width: 100%;
+}
+
+.title2 {
+     font-size: 20px;
+     padding-bottom: 10px;
+     font-weight: 500;
+}
+
+.p-bot {
+     margin-top: 8px;
+     color: #28252577;
+     font-size: 18px;
+}
+
+.p-head{
+     margin-top: 8px;
+     color: #28252577;
+}
+
+@media only screen and (max-width: 420px) {
+
+     .space-top {
+          height: 20px;
+     }
+
+     .btn-ข่าวสารและประชาสัมพันธ์{
+          display: inline-block;
+          margin-top: 15px;
+          font-size: 8px;
+          padding: 7px 12px;
+     }
+
+
+     .container-content h1 {
+          font-size: 15px;
+          
+     }
+     
+     .nav_link {
+          font-size: 12px;
+     }
+     
+     hr {
+          width: 100%;
+     }
+     
+     .title2 {
+          font-size: 15px;
+     }
+     
+     .p-bot {
+          
+          font-size: 9px;
+     }
+
+}
+@media only screen and (min-width: 420px) {
+
+
+     .btn-ข่าวสารและประชาสัมพันธ์{
+          display: inline-block;
+          margin-top: 15px;
+          font-size: 12px;
+          padding: 8px 15px;
+     }
+
+
+     .container-content h1 {
+          font-size: 24px;
+          
+     }
+     
+     .nav_link {
+          font-size: 12px;
+     }
+     
+     hr {
+          width: 100%;
+     }
+     
+     .title2 {
+          
+          font-size: 20px;
+     }
+     
+     .p-bot {
+          
+          font-size: 14px;
+     }
+
+     .p-head{
+          font-size: 17px;
+     }
+
+}
+
+@media only screen and (min-width: 600px){
+     .btn-ข่าวสารและประชาสัมพันธ์{
+          display: inline-block;
+          margin-top: 15px;
+          font-size: 12px;
+          padding: 8px 15px;
+     }
+
+
+     .container-content h1 {
+          font-size: 24px;
+          
+     }
+     
+     .nav_link {
+          font-size: 12px;
+     }
+     
+     hr {
+          width: 100%;
+     }
+     
+     .title2 {
+          
+          font-size: 20px;
+     }
+     
+     .p-bot {
+          
+          font-size: 14px;
+     }
+
+     .p-head{
+          font-size: 17px;
+     }
+
+}
+
+@media only screen and (min-width: 800px){
+
+     .space-top {
+          display: inline-block;
+          height: 70px;
+     }
+     .btn-ข่าวสารและประชาสัมพันธ์{
+          display: inline-block;
+          margin-top: 15px;
+          font-size: 19px;
+          padding: 8px 17px;
+     }
+
+
+     .container-content h1 {
+          font-size: 33px;
+          
+     }
+     
+     .nav_link {
+          font-size: 12px;
+     }
+     
+     hr {
+          width: 100%;
+     }
+     
+     .title2 {
+          font-size: 20px;
+     }
+     
+     .p-bot {
+          
+          font-size: 18px;
+     }
+
+     .p-head{
+          font-size: 18px;
+     }
+}
+
+@media only screen and (min-width: 992px){
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}

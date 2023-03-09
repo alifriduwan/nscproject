@@ -1,0 +1,9 @@
+.desc{
+    font-size: 14px;
+}
+
+@media (min-width:575px) {
+    .Butback{
+        display: none;
+    }
+}

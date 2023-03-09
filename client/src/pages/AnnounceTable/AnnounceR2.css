@@ -1,0 +1,113 @@
+table{
+    margin-top: 10px;
+    width: 100% !important;
+}
+
+.Htable{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    border-bottom: 1.5px solid #999;
+    padding: 10px;
+}
+
+.Htable .display-4{
+    color: #444;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Htable img{
+    width: 8rem;
+}
+
+.Htable .NSC{
+    width: 4rem;
+}
+
+.Htable .nstda5{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    width: 50px;
+}
+
+.align-middle th{
+    text-align: center;
+    background: #4F80C0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.childT td{
+    color: #4F80C0;
+    font-size: 10px;
+}
+
+.childT th{
+    text-align: center;
+    background: #fff;
+    color: #4F80C0;
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.dataTables_length label{
+    color: #444;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-gap: 15px;
+    width: 15rem;
+    text-align: center;
+    align-items: center;
+}
+
+.dataTables_length select{
+    cursor: pointer;
+}
+
+.dataTables_filter label{
+    color: #444;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+    grid-gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.paginate_button:hover{
+    display: none;
+
+}
+
+.dataTables_filter{
+    float: none;
+}
+
+.dataTables_filter input{
+    width: 80%;
+}
+
+@media (max-width:900px) {
+    .childT th{
+        display: none;
+    }
+
+    .Hide{
+        display: none;
+    }
+}
+
+@media (max-width:670px) {
+    .Htable img {
+        width: 100px;
+    }
+}
+
+@media (max-width:540px) {
+    .Htable img {
+        width: 80px;
+    }
+}
