@@ -32,7 +32,7 @@ function Scheddule_MTG5() {
          <div className="card mt-5">
            <div className="card-body">
              <div style={{maxWidth:'960px',margin:"15px auto"}}>
-                 <div className='HeadMT' style={{textAlign:'center',backgroundColor:'#3C84AB',overflow:'hidden',borderRadius:'9px',color:'white'}}>
+                 <div className='HeadMT' style={{textAlign:'center',backgroundColor:'#006ebc',overflow:'hidden',borderRadius:'9px',color:'white'}}>
                    <h6>ตารางเข้าร่วมประชุมออนไลน์</h6>
                  </div>    
                  <div className='SecMT' style={{textAlign:'center',backgroundColor:'#C1AEFC', overflow:'hidden',borderRadius:'9px',color:'white'}}>
@@ -40,7 +40,7 @@ function Scheddule_MTG5() {
                      วันจันทร์ที่ 9 กุมภาพันธ์ 2565
                    </h6>
                  </div>
-                 <Table striped bordered hover variant="dark" responsive="md" style={{width:'100%',borderRadius:'9px'}}> 
+                 <Table striped bordered hover variant="white" responsive="md" style={{width:'100%',borderRadius:'9px'}}> 
                     <thead style={{borderRadius:'9px'}}>
                        <tr className='HeadTab'>
                          <th style={thStyle}>กลุ่ม</th>
