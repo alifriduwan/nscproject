@@ -2,6 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer'
+import './PlaceContact.css'
 
 function PlaceContact() {
   return (
@@ -23,7 +24,7 @@ function PlaceContact() {
                 <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยสงขลานครินทร์</p>
                 <p>โทร: 074-287-076</p>
                 <p>อีเมลล์: wimon@coe.psu.ac.th</p>
-                <p>เฟซบุ๊ก: NSC Thailand Southern Region-(PSU)</p>
+                <a href='https://web.facebook.com/nsc.th' target={'_blank'} className='link-facebook'><p>เฟซบุ๊ก: NSC Thailand Southern Region-(PSU)</p></a>
               </div>
             </tr>
           </tbody>
