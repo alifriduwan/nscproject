@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Button } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import { userData } from '../../helper';
 import "./Profile.css"
@@ -108,6 +109,11 @@ var requestOptions = {
                         <div className='Username'>
                             <h6>เข้าชิง</h6>
                             <p>{usertable.Final}</p>
+                        </div>
+                        <div className='BotPDF'>
+                            <a href="https://drive.google.com/drive/folders/1aTjhepEp4AUqHN3o9TNOBO5WJHQMyuY7?usp=sharing">
+                                <Button className='FilePDF' variant="success">ดาวน์โหลดเกียรติบัตรและเอกสารรับทุน</Button>
+                            </a>
                         </div>
                     </div>
                 </div>

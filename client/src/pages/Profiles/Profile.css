@@ -33,6 +33,18 @@
     grid-gap: 1px;
 }
 
+.FilePDF{
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.BotPDF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
 @media (max-width:410px) {
     .Username{
         grid-template-columns: 1fr 1fr;
