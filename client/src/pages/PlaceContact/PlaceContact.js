@@ -23,7 +23,7 @@ function PlaceContact() {
               <div>
                 <p>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยสงขลานครินทร์</p>
                 <p>โทร: 074-287-076</p>
-                <p>อีเมลล์: wimon@coe.psu.ac.th</p>
+                <a href='mailto: wimon@coe.psu.ac.th' target={'_blank'} className='link-email'><p>อีเมลล์: wimon@coe.psu.ac.th</p></a>
                 <a href='https://web.facebook.com/nsc.th' target={'_blank'} className='link-facebook'><p>เฟซบุ๊ก: NSC Thailand Southern Region-(PSU)</p></a>
               </div>
             </tr>
