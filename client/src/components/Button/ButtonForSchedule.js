@@ -1,5 +1,4 @@
 import React from 'react'
-import './ButtonForSchedule.css'
 
 function ButtonForSchedule() {
   return (
