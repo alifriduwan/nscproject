@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Row, Col, Card, Button } from 'react-bootstrap'
 import Header from '../../components/Header/Header';
+import './Announcepage.css'
 
 function Announcepage() {
     const [items, setItems] = useState([]);
@@ -26,11 +27,11 @@ function Announcepage() {
                             <Col className='CARDAnn' sm={3} key={item.id} >
                                 <Card className="text-center" style={{ width: '100%' }}>
                                     <Card.Body>
-                                        <Card.Title>{item.attributes.title}</Card.Title>
-                                            <Card.Text className=''>
+                                        <Card.Title className='TitleCard'>{item.attributes.title}</Card.Title>
+                                            <Card.Text className='desc'>
                                                 {item.attributes.description}
                                             </Card.Text>
-                                        <Button href='/' variant="primary">กลับสู่หน้าหลัก</Button>
+                                        <Button className='Butback' href='/' variant="primary">กลับสู่หน้าหลัก</Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
