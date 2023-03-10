@@ -1,33 +1,51 @@
-import { render, waitForElement, fireEvent } from '@testing-library/react'
-import Login from './Login'
-jest.mock('axios')
+import React from 'react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
+import Login from './Login';
+import { render, screen } from '@testing-library/react';
+import Login from './Login';
 
-it('shounld have a username and a password field, also a submit button', () => {
-  render(<Login/>)
-
-  const UsernameField = screen.getByLabelText(/Username/i);
-  const PasswordField = screen.getByLabelText(/Password/i);
-  const submitButton = screen.getByText(/submit/i);
-
-
-  expect(UsernameField).toBeInTheDocument();
-  expect(PasswordField).toBeInTheDocument();
-  expect(submitButton).toBeInTheDocument();
+test('renders login component', () => {
+  render(<Login />);
+  const linkElement = screen.getByText(/Enter Username/i);
+  expect(linkElement).toBeInTheDocument();
 });
 
-it('should allow the user to submit their credentials', () =>{
-  const submit = jest.fn();
-  render(<Login submit={submit}/>)
 
-  const UsernameField = screen.getByLabelText(/Username/i);
-  const PasswordField = screen.getByLabelText(/Password/i);
-  const submitButton = screen.getByText(/submit/i);
+describe('Login component', () => {
+  test('renders login form and submits successfully', async () => {
+    const { getByLabelText, getByText } = render(<Login />);
 
+    const emailInput = getByLabelText('Enter Username');
+    fireEvent.change(emailInput, { target: { value: 'testuser@example.com' } });
 
-  userEvent.type(UsernameField, "email");
-  userEvent.type(PasswordField, "password");
-  userEvent.click(submitButton);
+    const passwordInput = getByLabelText('Enter Password');
+    fireEvent.change(passwordInput, { target: { value: 'testpassword' } });
 
+    const submitButton = getByText('Sign In');
+    fireEvent.click(submitButton);
+
+    await waitFor(() => {
+      expect(getByText('เข้าสู่ระบบสำเร็จ!')).toBeInTheDocument();
+      // Add more assertions as needed
+    });
+
+  test('renders login component', () => {
+    render(<Login />);
+    const linkElement = screen.getByText(/Enter Username/i);
+    expect(linkElement).toBeInTheDocument();
+  
+  test('renders login form', () => {
+    const { getByText, getByLabelText } = render(<Login />);
+    const usernameInput = getByLabelText('Enter Username');
+    const passwordInput = getByLabelText('Enter Password');
+    const signInButton = getByText('Sign In');
+  
+    expect(usernameInput).toBeInTheDocument();
+    expect(passwordInput).toBeInTheDocument();
+    expect(signInButton).toBeInTheDocument();  
+
+  });   
+  });
 });
-
+});
 
