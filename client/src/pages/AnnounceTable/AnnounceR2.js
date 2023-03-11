@@ -4,12 +4,14 @@ import jQuery from "jquery";
 import Header from '../../components/Header/Header';
 import './AnnounceR2.css';
 import DataTable from 'datatables.net-bs5';
+import conf from '../../conf';
+
 class AnnounceR2 extends Component {
   componentDidMount() {
     $(document).ready(() => {
         $.ajax({
           method: 'get',
-          url: 'http://localhost:1337/api/usertables?pagination[page]=1&pagination[pageSize]=50',
+          url: `${conf.apiPrefix}/usertables`,
           success: (response) => {
             console.log(response);
             if (response.data.length > 0) {

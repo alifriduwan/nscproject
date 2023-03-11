@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Header from '../../components/Header/Header';
+import conf from '../../conf';
 
 function Qualifications() {
   return (

@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { userData } from '../../helper';
 import HeaderAdmin from '../Admin/HeaderAdmin';
+import conf from '../../conf';
 
 function Main() {
      const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -20,7 +21,7 @@ function Main() {
               redirect: 'follow'
             };
       
-            fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+            fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
             .then(response => response.json())
             .then(result => {
               console.log(result);

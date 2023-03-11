@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import { Row, Col, Card, Button } from 'react-bootstrap'
 import Header from '../../components/Header/Header';
 import './Announcepage.css'
+import conf from '../../conf';
 
 function Announcepage() {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:1337/api/announces")
+        fetch(`${conf.apiPrefix}/announces`) // use the apiPrefix value here
           .then(res => res.json())
           .then(
             (result) => {

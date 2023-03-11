@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import { userData } from '../../helper';
 import "./Profile.css"
+import conf from '../../conf';
 
 function Profile() {
     const [data, setData] = useState(false);
@@ -20,7 +21,7 @@ var requestOptions = {
         };
 
 
-        fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+        fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
         .then(response => response.json())
         .then(result => {
         console.log(result);

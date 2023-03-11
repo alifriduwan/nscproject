@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import HeaderAdmin from './HeaderAdmin';
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import { userData } from '../../helper';
+import conf from '../../conf';
 
 export default function AnnCreate() {
 const [ title, setTitle ] = useState('');
@@ -23,7 +24,7 @@ useEffect(() => {
         redirect: 'follow'
       };
 
-      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+      fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -33,7 +34,7 @@ useEffect(() => {
       })
       .catch(error => console.log('error', error));
     }
-        fetch("http://localhost:1337/api/announces")
+        fetch(`${conf.apiPrefix}/announces`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -73,12 +74,12 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://localhost:1337/api/announces", requestOptions)
+fetch(`${conf.apiPrefix}/announces`, requestOptions)
   .then(response => response.json())
   .then(result => {
     console.log(result)
     if (title && description !== "" ){
-        window.location.href = 'adminann'
+        window.location.href = '/adminann'
     }
   })
   .catch(error => console.log('error', error));
@@ -86,7 +87,7 @@ fetch("http://localhost:1337/api/announces", requestOptions)
 
     if (!isAuthenticated) {
         return (
-        <h1>You must be authenticated to view this page.</h1>
+        <h1></h1>
         )
     }
 

@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
+import conf from '../../conf';
 
 export default function HeaderAdmin() {
   const navigate = useNavigate();

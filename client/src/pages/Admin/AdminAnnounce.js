@@ -16,6 +16,7 @@ import HeaderAdmin from './HeaderAdmin';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
+import conf from '../../conf';
 
 export default function AdminAnnounce() {
   const [items,setItems] = useState([]);
@@ -33,7 +34,7 @@ export default function AdminAnnounce() {
         redirect: 'follow'
       };
 
-      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+      fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -47,7 +48,7 @@ export default function AdminAnnounce() {
   }, [])
 
   const RePage = () =>{
-    fetch("http://localhost:1337/api/announces")
+    fetch(`${conf.apiPrefix}/announces`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -73,7 +74,7 @@ export default function AdminAnnounce() {
       redirect: 'follow'
     };
     
-    fetch("http://localhost:1337/api/announces/"+id , requestOptions)
+    fetch(`${conf.apiPrefix}/announces/`+id , requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result)
@@ -87,7 +88,7 @@ export default function AdminAnnounce() {
 
   if (!isAuthenticated) {
     return (
-        <h1>You must be authenticated to view this page.</h1>
+        <div></div>
     )
   }
 

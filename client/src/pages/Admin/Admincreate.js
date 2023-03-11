@@ -5,6 +5,7 @@ import { Grid,TextField,Typography } from '@mui/material';
 import { Button } from 'reactstrap';
 import { userData } from '../../helper';
 import HeaderAdmin from './HeaderAdmin';
+import conf from '../../conf';
 
 export default function Admincreate() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function Admincreate() {
         redirect: 'follow'
       };
 
-      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+      fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -29,7 +30,7 @@ export default function Admincreate() {
       })
       .catch(error => console.log('error', error));
     }
-        fetch("http://localhost:1337/api/usertables")
+        fetch(`${conf.apiPrefix}/usertables`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -79,12 +80,12 @@ export default function Admincreate() {
       redirect: 'follow'
 };
 
-  fetch("http://localhost:1337/api/usertables", requestOptions)
+  fetch(`${conf.apiPrefix}/usertables`, requestOptions)
     .then(response => response.json())
     .then(result => {
       
       if (Code && Project && Class && Level && School && Advisor && Student1 && Student2 && Student3 && Round1 && Scholar && Final  !== "" ){
-        window.location.href = 'Admin'
+        window.location.href = '/Admin'
       }
     })
     .catch(error => console.log('error', error));
@@ -107,7 +108,7 @@ export default function Admincreate() {
 
   if (!isAuthenticated) {
     return (
-    <h1>You must be authenticated to view this page.</h1>
+     <div></div>
     )
 }
 

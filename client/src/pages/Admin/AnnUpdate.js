@@ -5,6 +5,7 @@ import HeaderAdmin from './HeaderAdmin';
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import { userData } from '../../helper';
 import { useParams } from 'react-router-dom';
+import conf from '../../conf';
 
 export default function AnnUpdate() {
   const { id } = useParams();
@@ -26,7 +27,7 @@ useEffect(() => {
         redirect: 'follow'
       };
 
-      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+      fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -43,7 +44,7 @@ useEffect(() => {
           redirect: 'follow'
         };
 
-        fetch("http://localhost:1337/api/announces/"+id ,requestOptions)
+        fetch(`${conf.apiPrefix}/announces/`+id ,requestOptions)
         .then(res => res.json())
         .then(result => {
           console.log(result)
@@ -85,7 +86,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://localhost:1337/api/announces/"+id, requestOptions)
+fetch(`${conf.apiPrefix}/announces/`+id, requestOptions)
   .then(response => response.json())
   .then(result => {
     console.log(result)
@@ -98,7 +99,7 @@ fetch("http://localhost:1337/api/announces/"+id, requestOptions)
 
     if (!isAuthenticated) {
         return (
-        <h1>You must be authenticated to view this page.</h1>
+        <h1></h1>
         )
     }
 

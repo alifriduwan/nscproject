@@ -8,6 +8,7 @@ import Container from '@mui/material/Container';
 import { userData } from "../../helper";
 import { CssBaseline } from "@mui/material";
 import HeaderAdmin from "./HeaderAdmin";
+import conf from '../../conf';
 
 export default function UserUpdate() {  
 
@@ -39,7 +40,7 @@ export default function UserUpdate() {
         redirect: 'follow'
       };
 
-      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+      fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -56,7 +57,7 @@ export default function UserUpdate() {
           redirect: 'follow'
         };
 
-    fetch("http://localhost:1337/api/usertables/"+id)
+    fetch(`${conf.apiPrefix}/usertables/`+id)
       .then(res => res.json())
       .then(
         (result) => {
@@ -116,7 +117,7 @@ export default function UserUpdate() {
       redirect: 'follow'
     };
 
-    fetch("http://localhost:1337/api/usertables/"+id, requestOptions)
+    fetch(`${conf.apiPrefix}/usertables/`+id, requestOptions)
     .then(response => response.json())
     .then(result => {
     console.log(result)
@@ -129,7 +130,7 @@ export default function UserUpdate() {
 
   if (!isAuthenticated) {
     return (
-        <h1>You must be authenticated to view this page.</h1>
+        <h1></h1>
     )
   }
 

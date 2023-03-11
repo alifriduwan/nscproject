@@ -18,6 +18,7 @@ import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import WarnLog from '../../components/Card/WarnLog';
+import conf from '../../conf';
 
 export default function Users() {
   const [items,setItems] = useState([]);
@@ -34,7 +35,7 @@ export default function Users() {
         headers: myHeaders,
         redirect: 'follow'
       };
-      fetch("http://localhost:1337/api/users/me?populate=*", requestOptions)
+      fetch(`${conf.apiPrefix}/users/me?populate=*`, requestOptions)
       .then(response => response.json())
       .then(result => {
         console.log(result);
@@ -49,7 +50,7 @@ export default function Users() {
   }, [])
 
     const UsersGet = () => {
-        fetch("http://localhost:1337/api/usertables?pagination[page]=1&pagination[pageSize]=50")
+        fetch(`${conf.apiPrefix}/usertables?pagination[page]=1&pagination[pageSize]=50`)
         .then(res => res.json())
         .then(
             (result) => {
@@ -76,7 +77,7 @@ export default function Users() {
         headers: myHeaders,
         redirect: 'follow'
     };
-    fetch("http://localhost:1337/api/usertables/"+id, requestOptions)
+    fetch(`${conf.apiPrefix}/usertables/`+id, requestOptions)
     .then(response => response.json())
     .then(result => {
     console.log(result)
@@ -91,7 +92,7 @@ export default function Users() {
 
     if (!isAuthenticated) {
         return (
-            <h1>You must be authenticated to view this page.</h1>
+            <h1></h1>
         )
       }
 

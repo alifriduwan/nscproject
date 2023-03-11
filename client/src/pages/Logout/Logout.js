@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-
+import conf from '../../conf';
 
 const Logout = () => {
     const navigate = useNavigate()
