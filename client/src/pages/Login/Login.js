@@ -4,6 +4,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom';
 import { storeUser } from '../../helper';
+import conf from '../../conf';
 
 const initialUser = { password: "", identifier: ""};
 function Login () {
@@ -19,7 +20,7 @@ function Login () {
 
 
     const handleLogin = async () => {
-        const url = `http://localhost:1337/api/auth/local`;
+        const url = `${conf.apiPrefix}/auth/local`;
         const Swal = require('sweetalert2')
             try {
                 if (user.identifier && user.password){
