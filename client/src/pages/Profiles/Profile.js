@@ -36,7 +36,7 @@ var requestOptions = {
     if (!data) {
         return (
           <div>
-            <h1>You must be authenticated to view this page.</h1>
+            <h1></h1>
           </div>
         )
       }
